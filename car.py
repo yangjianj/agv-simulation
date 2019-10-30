@@ -77,8 +77,13 @@ class Car():
         for node in graph[start]:
             if node not in path:
                 newpaths = self.find_all_path(graph, node, end, path)
+                print(1111)
+                print(newpaths)
                 for newpath in newpaths:
-                    path.append(newpath)
+                    print(222)
+                    print(paths)
+                    paths.append(newpath)
+                    print(paths)
         return paths
 
     def find_shartest_path(self,graph,start,end,path=[]):
@@ -92,8 +97,8 @@ class Car():
                 newpath = self.find_shartest_path(graph, node, end, path)
                 if newpath:
                     if not shortestPath or len(newpath) < len(shortestPath):
-                        shartestPath = newpath
-        return shartestPath
+                        shortestPath = newpath
+        return shortestPath
 
     def loop(self):
         pass
@@ -107,4 +112,5 @@ if __name__ == '__main__':
     }
     car = Car(1,2,3,4,5)
     path = car.find_path(graph,'1','3')
-    print(path)
+    path1 = car.find_all_path(graph, '1', '3')
+    print(path1)
