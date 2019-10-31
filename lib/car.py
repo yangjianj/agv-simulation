@@ -9,11 +9,14 @@ class Car():
         self.willpath = None
         self.sites = sites
         self.graph = graph
-        self.name = name
         self.speed = speed  #10
+        self.status = 'normal'
         self.x_step = 0
         self.y_step = 0
+        self.name = name
+        self.id = 'ax001'
         self.init_path(target)
+        self.con = Connector()
 
         '''
         self.sites = {
@@ -145,6 +148,19 @@ class Car():
         result = {'nextp':nextp,'distance':distance,'x_step':x_step,'y_step':y_step}
         return result
 
+    def compute_path_distance(self,curr=None,path=None):
+        #计算当前坐标到路径终点的距离
+        if curr == None:
+            curr = self.curr
+        distance = 0
+        tmps = curr
+        for pxy in path:
+            x_dis = self.sites[pxy][0] - tmps[0]
+            y_dis = self.sites[pxy][1] - tmps[1]
+            distance = distance+(math.sqrt((x_dis ** 2) + (y_dis ** 2)))
+            tmps = self.sites[pxy]
+        return distance
+
     def align_step(self):
         #校准小车位置到站点
         if len(self.willpath) != 0:
@@ -187,11 +203,17 @@ class Car():
     def init_path(self,target):
         target = self.get_sites_key(target)
         nearsites = self.get_near_site()
-        tmppath = []
+        spath = None
         #待改进，暂没有运算路径间距离
         for near in nearsites:
             x=self.find_shartest_path(self.graph,near,target)
-            tmppath.append(x)
+            distance = self.compute_path_distance(self.curr,x)
+            if not spath:
+                spath = [x,distance]
+            elif distance<spath[1]:
+                spath = [x,distance]
+        dist = self.compute_distance(self.curr,self.sites[spath[0][0]])
+        '''
         shortnear = []  #
         for p in tmppath:
             pxy = self.sites[p[0]]
@@ -199,13 +221,16 @@ class Car():
             if shortnear == []:
                 shortnear=[dist,p]
             elif dist['distance']<shortnear[0]['distance']:
-                shortnear[0] = dist
-                shortnear[1] = p
-
+                shortnear=[dist,p]
         self.path = shortnear[1]
         self.willpath = self.path
         self.x_step = shortnear[0]['x_step']
         self.y_step = shortnear[0]['y_step']
+        '''
+        self.path = spath[0]
+        self.willpath = self.path
+        self.x_step = dist['x_step']
+        self.y_step = dist['y_step']
         return self.path
 
     def switch_nextpoint(self):
@@ -231,23 +256,34 @@ class Car():
             if xy == v:
                 return k
 
+    def redis_message(self,action,key,value=None):
+        rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
+        if action == 'hset':
+            self.con.hset(rediskey, 'target', str(self.target))
+            self.con.hset(rediskey, 'name', self.name)
+            self.con.hset(rediskey, 'position', str(self.curr))
+            self.con.hset(rediskey, 'status', self.status)
+            self.con.hset(rediskey, 'id', self.id)
+            self.con.hset(rediskey, key,value)
+        elif action == 'hget':
+            return self.con.hget(rediskey,key)
+
     def run(self):
-        con = Connector()
         nextp = self.compute_distance()
         self.x_step = nextp['x_step']
         self.y_step = nextp['y_step']
-        con.hset(self.name,'target',str(self.target))
+        self.con.hset(self.name, 'target',str(self.target))
         while(1):
             print(self.name,'curr',str(self.curr))
             print('willpath:',self.willpath)
-            con.hset(self.name,'curr',str(self.curr))
+            self.con.hset(self.name,'curr',str(self.curr))
 
-            target = con.hget(self.name,'target')
+            target = self.con.hget(self.name,'target')
             targetxy = self.convert_point_str(target)
             if targetxy != self.target:
                 self.change_target()
             else:
-                con.hset(self.name, 'curr', str(self.curr))
+                self.con.hset(self.name, 'curr', str(self.curr))
                 if len(self.willpath) == 0:
                     self.x_step = 0
                     self.y_step = 0
@@ -276,6 +312,6 @@ if __name__ == '__main__':
         '4': [100,700],
         '5': [200,500]
     }
-    car = Car('car1',[150,900],[300,700],sites,graph,10)
+    car = Car('car1',[300,880],[100,700],sites,graph,10)
     car.run()
 

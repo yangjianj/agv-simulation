@@ -1,3 +1,4 @@
+import time
 print(1<2<3)
 
 print(round(2/3,2))
@@ -23,3 +24,5 @@ print(xx)
 print(xx[0] == 100)
 
 print(xx == [100,900])
+
+print(time.strftime('%Y%m%d-%H%M%S'))
