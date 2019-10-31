@@ -14,7 +14,7 @@ class Connector():
         return self.client.set(key,value)
 
     def get(self,key):
-        return self.client.get(key)
+        return self.client.get(key).decode('utf-8')
     
     def keys(self):
         return self.client.keys()
@@ -23,13 +23,14 @@ class Connector():
         return self.client.hset(name,key,value)
     
     def hget(self,name,key):
-        return self.client.hget(name,key)
+        return self.client.hget(name,key).decode('utf-8')
 
 if __name__ == '__main__':
     #Connector().set('d1','{"x":100,"y":200}')
+    Connector().hset('a','list1','[100,200]')
     #re = Connector().get('d1').decode('utf-8')
     #print(re)
     #print(Connector().keys())
-    print(Connector().get('t6'))
+    print(Connector().hget('a','list1').decode('utf-8'))
 
 

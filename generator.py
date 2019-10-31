@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-import time,json,random
-from connector import Connector
+from lib.connector import Connector
 
 def read_data(file):
     result = []
