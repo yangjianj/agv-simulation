@@ -6,12 +6,22 @@ $(function(){
     var symbol = 'emptyCircle';
     var symbolSize = 10;
     var linedata = {
-                'name':["a","b"],
+                'name':["car1","car2"],
                 'data':[[[100,900],[300,900],[300,700],[100,700],[100,900]],
                 [[800,500],[800,300],[800,200],[800,300],[500,300],[500,500],[800,500]]]
                 };
     //var linelist = ["a","b"]
-    var points = [];
+    var markpoints = {
+                        'car1':[
+                                {symbol: 'circle',value:'1',symbolSize:20,xAxis:150,yAxis:700},
+                                {symbol: 'pin',value:'站点1',symbolSize:50,xAxis:100,yAxis:900},
+                                {symbol: 'pin',value:'站点2',symbolSize:50,xAxis:300,yAxis:700},
+                               ],
+                          'car2':[
+                                {symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:300},
+                                {symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
+                                ]
+                        };
 
     option = {
         title: {
@@ -57,9 +67,10 @@ $(function(){
                 markPoint:{
                            //symbol: 'pin',
                             data:[
-                              {symbol: 'pin',value:'站点1',symbolSize:50,xAxis:100,yAxis:900},
-                              {symbol: 'pin',value:'站点2',symbolSize:50,xAxis:300,yAxis:700},
-                              {symbol: 'circle',value:'1',symbolSize:20,xAxis:150,yAxis:700}, ]
+                                {symbol: 'circle',value:'1',symbolSize:20,xAxis:150,yAxis:700},
+                                {symbol: 'pin',value:'站点1',symbolSize:50,xAxis:100,yAxis:900},
+                                {symbol: 'pin',value:'站点2',symbolSize:50,xAxis:300,yAxis:700},
+                               ]
                             },
                 data: linedata.data[0]
             },
@@ -72,8 +83,8 @@ $(function(){
                 markPoint:{
                             symbol: 'circle',
                             data:[
-                              {symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
-                               {symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:300},
+                                {symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:300},
+                                {symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
                                 ]
                             },
                 data: linedata.data[1]
@@ -99,6 +110,26 @@ $(function(){
             });
         }
     }); */
+    zr.on('click', function (params) {
+        var pointInPixel = [params.offsetX, params.offsetY];
+        var pointInGrid = myChart.convertFromPixel('grid', pointInPixel);
+
+        if (myChart.containPixel('grid', pointInPixel)) {
+            //data.push(pointInGrid);
+            myChart.setOption({
+                series: [{
+                    id: linedata.name[1],
+                    markPoint:{
+                            symbol: 'circle',
+                            data:[
+                                {symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:400},
+                                {symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
+                                ]
+                            },
+                }]
+            });
+        }
+    });
 
     zr.on('mousemove', function (params) {
         var pointInPixel = [params.offsetX, params.offsetY];
@@ -110,7 +141,7 @@ $(function(){
     }
 
     var sock = null;
-    var serversocket = "ws://127.0.0.1:8080/wsocket";
+    var serversocket = "ws://127.0.0.1:8080/markpoint";
     sock = new WebSocket(serversocket);
     sock.onopen = function(){
         console.log("connect to "+serversocket);
@@ -123,9 +154,9 @@ $(function(){
         console.log("message recevice:"+e.data);
         //var redata = eval(e.data);
         var redata =jQuery.parseJSON(e.data);
-        var pointlist = redata.message 
-
-        addpoint(pointlist)
+        var pointlist = redata.message ;
+        change_position(pointlist);
+        //addpoint(pointlist)
     }
 
     function send(){
@@ -133,7 +164,7 @@ $(function(){
         sock.send(smsg);
     }
     
-    function addpoint(params){
+    function addpoint(params){   //line 增加端点
         for(var i=0;i<params.length;i++){
 
             var pointInPixel = [params[i].offsetX, params[i].offsetY];
@@ -150,6 +181,32 @@ $(function(){
             }
         }
         
+    }
+
+    function change_position(params){  //改变markpoint 位置
+        for(var i=0;i<params.length;i++){
+            carname = params[i].name;
+            nowdata = markpoints[carname];
+            console.log('####');
+
+            console.log(nowdata[0]);
+
+            if(params[i].position != null){
+                console.log('# in if')
+                nowdata[0].xAxis = params[i]['position'][0];
+                nowdata[0].yAxis = params[i]['position'][1];
+                console.log(nowdata);
+                myChart.setOption({
+                    series: [{
+                                id: carname,
+                         markPoint:{
+                                   data:nowdata
+                                    },
+                    }]
+                });
+            }
+
+        }
     }
 
 })

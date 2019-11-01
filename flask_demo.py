@@ -4,7 +4,9 @@ from flask import Flask,render_template,request
 from geventwebsocket import WebSocketError
 from geventwebsocket.handler import WebSocketHandler
 from gevent.pywsgi import WSGIServer
-
+from lib.connector import Connector
+import lib.tool as Tool
+import config.config as config
 
 app= Flask(__name__)
 
@@ -52,7 +54,7 @@ def websocket_connect():
                 #    break
                 #print(message)
 
-                data = [data_generate(30),data_generate(30)]
+                #data = [data_generate(30),data_generate(30)]
 
                 postdata[0]["offsetX"] = data1[i%4][0]+random.randint(0,15)
                 postdata[0]["offsetY"] = data1[i%4][1]+random.randint(0,15)
@@ -67,11 +69,40 @@ def websocket_connect():
     else:
         return {"status": "error", "message": "request is not websocket"}
 
+@app.route("/markpoint")
+def websocket_markpoint():
+    if request.environ.get('wsgi.websocket'):
+        ws = request.environ['wsgi.websocket']
+
+        if not ws:
+            return {"status": "error", "message": "request is not websocket"}
+        else:
+            # while(1):
+            print("client connected")
+            while 1:
+                # try:
+                #    message = ws.receive()
+                # except WebSocketError:
+                #    break
+                # print(message)
+                position = []
+                for car in config.cars:
+                    position.append({'name': car['name'], 'position': Tool.get_car_position(car['name'])})
+
+                response = {"status": "ok", "message": position}
+                response = json.dumps(response)
+                ws.send(response)
+                time.sleep(1)
+
+    else:
+        return {"status": "error", "message": "request is not websocket"}
+'''
 def data_generate(x):
     location = {"offsetX":0,"offsetY":0}
     location["offsetX"] = random.randint(0,x)
     location["offsetY"] = random.randint(0,x)
     return location
+'''
 
 if __name__=="__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)

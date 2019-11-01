@@ -23,7 +23,10 @@ class Connector():
         return self.client.hset(name,key,value)
     
     def hget(self,name,key):
-        return self.client.hget(name,key).decode('utf-8')
+        if self.client.hget(name,key):
+            return self.client.hget(name,key).decode('utf-8')
+        else:
+            return None
 
 if __name__ == '__main__':
     #Connector().set('d1','{"x":100,"y":200}')
