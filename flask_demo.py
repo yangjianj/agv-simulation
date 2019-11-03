@@ -73,11 +73,23 @@ def websocket_connect():
 def websocket_markpoint():
     if request.environ.get('wsgi.websocket'):
         ws = request.environ['wsgi.websocket']
+        linedata = []
+        linexy = []
+        for index in range(len(config.cars)):
+            linedata.append(Tool.build_line(config.cars[index]['graph'],path=[]))
+            tmp = {'name':config.cars[index]['name'],'data':[],'markPoint':config.cars[index]['markPoint']}
+            for line in linedata[index]:
+                for p in line:
+                    tmp['data'].append(config.cars[index]['sites'][p])
+            linexy.append(tmp)
+
+        response = {"status": "ok", "line": linexy,"markpoint":None}  #发送路径信息给前端
+        response = json.dumps(response)
+        ws.send(response)
 
         if not ws:
             return {"status": "error", "message": "request is not websocket"}
         else:
-            # while(1):
             print("client connected")
             while 1:
                 # try:
@@ -89,20 +101,13 @@ def websocket_markpoint():
                 for car in config.cars:
                     position.append({'name': car['name'], 'position': Tool.get_car_position(car['name'])})
 
-                response = {"status": "ok", "message": position}
+                response = {"status": "ok","line":None,"markpoint": position}
                 response = json.dumps(response)
                 ws.send(response)
                 time.sleep(1)
 
     else:
         return {"status": "error", "message": "request is not websocket"}
-'''
-def data_generate(x):
-    location = {"offsetX":0,"offsetY":0}
-    location["offsetX"] = random.randint(0,x)
-    location["offsetY"] = random.randint(0,x)
-    return location
-'''
 
 if __name__=="__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)

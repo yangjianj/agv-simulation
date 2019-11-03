@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import math,time
+import threading
 from lib.connector import Connector
 import lib.tool as Tool
+import config.config as config
 class Car():
     def __init__(self,name,curr,target,sites,graph,speed):
         self.curr = curr   #[0,0]
@@ -16,7 +18,7 @@ class Car():
         self.y_step = 0
         self.name = name
         self.id = 'ax001'
-        self.init_path(target)
+        self._init_path(target)
         self.con = Connector()
 
         '''
@@ -85,42 +87,7 @@ class Car():
                     if Tool.three_point_online(s1,self.curr,s2):
                         return [k,dst]
 
-    #找出一条路径
-    def find_a_path(self,graph,start,end,path=[]):
-        path = path + [start]
-        if start == end:
-            return path
-        for node in graph[start]:
-            if node not in path:
-                newpath = self.find_a_path(graph, node, end, path)
-                if newpath:
-                    return newpath
-        return None
 
-    def find_all_path(self,graph,start,end,path=[]):
-        path = path + [start]
-        if start == end:
-            return [path]
-        paths = []  # 存储所有路径
-        for node in graph[start]:
-            if node not in path:
-                newpaths = self.find_all_path(graph, node, end, path)
-                for newpath in newpaths:
-                    paths.append(newpath)
-        return paths
-
-    def find_shartest_path(self,graph,start,end,path=[]):
-        path = path + [start]
-        if start == end:
-            return path
-        shortestPath = []
-        for node in graph[start]:
-            if node not in path:
-                newpath = self.find_shartest_path(graph, node, end, path)
-                if newpath:
-                    if not shortestPath or len(newpath) < len(shortestPath):
-                        shortestPath = newpath
-        return shortestPath
 
     def compute_distance(self,curr=None,nextp=None):
         #计算当前点到下一站点的距离
@@ -131,8 +98,6 @@ class Car():
         x_dis = nextp[0]-curr[0]
         y_dis =  nextp[1]-curr[1]
         distance = math.sqrt((x_dis**2)+(y_dis**2))
-        #x_step = round(x_dis/self.speed,3)
-        #y_step = round(y_dis/self.speed,3)
         if distance != 0 :
             x_step = round(self.speed/distance,8)*(x_dis)
             y_step = round(self.speed/distance,8)*(y_dis)
@@ -155,7 +120,7 @@ class Car():
             tmps = self.sites[pxy]
         return distance
 
-    def align_step(self):
+    def _align_step(self):
         #校准小车位置到站点
         if len(self.willpath) != 0:
             nextp = self.willpath[0]
@@ -168,21 +133,21 @@ class Car():
                 return None
 
     def change_target(self,target):
-        target = self.get_sites_key(target)
+        target = self._get_sites_key(target)
         if self.target == target:
             return self.target
         else:
             self.target = target
-        re = self.init_path(target)
+        re = self._init_path(target)
         return re
 
-    def init_path(self,target):
-        target = self.get_sites_key(target)
+    def _init_path(self,target):
+        target = self._get_sites_key(target)
         nearsites = self.get_near_site()
         spath = None
         #待改进，暂没有运算路径间距离
         for near in nearsites:
-            x=self.find_shartest_path(self.graph,near,target)
+            x=Tool.find_shartest_path(graph,near,target)
             distance = self.compute_path_distance(self.curr,x)
             if not spath:
                 spath = [x,distance]
@@ -205,15 +170,7 @@ class Car():
             self.x_step = 0
             self.y_step = 0
 
-    def convert_point_str(self,pstr):
-        p = pstr.replace('[', '')
-        p = p.replace(']', '')
-        p = p.split(',')
-        p[0] = float(p[0])
-        p[1] = float(p[1])
-        return p
-
-    def get_sites_key(self,xy):
+    def _get_sites_key(self,xy):
         for k,v in self.sites.items():
             if xy == v:
                 return k
@@ -236,12 +193,11 @@ class Car():
         self.y_step = nextp['y_step']
         self.con.hset(self.name, 'target',str(self.target))
         while(1):
-            print(self.name,'curr',str(self.curr))
             print('willpath:',self.willpath)
             Tool.set_car_position(self.name,str(self.curr))
 
             target = self.con.hget(self.name,'target')
-            targetxy = self.convert_point_str(target)
+            targetxy = Tool.convert_xystr_xylist(target)
             if targetxy != self.target:
                 self.change_target(targetxy)
             else:
@@ -251,7 +207,7 @@ class Car():
                     self.y_step = 0
                 elif self.curr == self.sites[self.willpath[0]]:  # 切换nextp
                     self.switch_nextpoint()
-            self.align_step()
+            self._align_step()
             self.curr[0] = self.curr[0] + self.x_step
             self.curr[1] = self.curr[1] + self.y_step
             time.sleep(1)
@@ -260,20 +216,21 @@ class Car():
         pass
 
 if __name__ == '__main__':
-    graph = {
-        '1': ['2', '4','5'],
-        '2': ['1', '3'],
-        '3': ['2', '5'],
-        '4': ['1', '5'],
-        '5': ['3','4','1']
-    }
-    sites={
-        '1': [100,900],
-        '2': [300,900],
-        '3': [300,700],
-        '4': [100,700],
-        '5': [200,500]
-    }
-    car = Car('car1',[100,900],[200,500],sites,graph,10)
-    car.run()
+    cars = []
+    for item in config.cars:
+        id = item['name']
+        start = item['poistion']
+        target = item['target']
+        sites = item['sites']
+        graph = item['graph']
+        speed = item['speed']
+        car = Car(id,start,target,sites,graph,speed)
+        #car.run()
+        t=threading.Thread(target=car.run,args=())
+        cars.append(t)
+        t.start()
+    for t in cars:
+        t.join()
+
+
 
