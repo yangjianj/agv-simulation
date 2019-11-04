@@ -2,14 +2,20 @@ $(function(){
 $("#submit").click(function(){
 
   //var targetUrl = $("#addForm").attr("action");
-  var data = $("#ff").serialize();
-  console.log(1111);
+  //var data = $("#ff").serialize();
+  var fileds = $("#ff").serializeArray();  //form表单生成数组
+  var data={};
+  $.each(fileds,function(index,filed) {  //数组转为json对象
+          data[filed.name] = filed.value;
+      }
+  )
   console.log(data);
 
    $.ajax({
         type:'POST',
         url:'http://127.0.0.1:8080/submit',
-        data:data,  //重点必须为一个变量如：data
+       contentType:"application/json; charset=utf-8",
+        data:JSON.stringify(data),  //json数组
         dataType:'json',
         success:function(data){
         console.log('success');

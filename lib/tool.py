@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import math,time,copy
+import math,time,copy,json
 from lib.connector import Connector
+import config.config as config
 con = Connector()
-
 
 # 找出一条路径
 def find_a_path(graph, start, end, path=[]):

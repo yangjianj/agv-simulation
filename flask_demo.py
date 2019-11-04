@@ -5,11 +5,12 @@ from flask import Flask,render_template,request,jsonify
 from geventwebsocket import WebSocketError
 from geventwebsocket.handler import WebSocketHandler
 from gevent.pywsgi import WSGIServer
-import threading
-from lib.connector import Connector
+from gevent import monkey
 import lib.tool as Tool
+from lib.connector import Connector
 import config.config as config
 
+monkey.patch_all()  #遇到阻塞自动切换协程，程序启动时执行
 app= Flask(__name__)
 CORS(app,resources={r'/*':{"origins": "*"}})
 
@@ -94,9 +95,10 @@ def websocket_markpoint():
             return {"status": "error", "message": "request is not websocket"}
         else:
             print("client connected")
-            th = threading.Thread(target = handler_websocket,args=(ws,))
-            th.start()
-            '''
+            #th = threading.Thread(target = Tool.handler_websocket,args=(ws,))
+            #th.start()
+            #return {"status": "ok", "message": "connect is aliving"}
+
             while 1:
                 # try:
                 #    message = ws.receive()
@@ -111,33 +113,24 @@ def websocket_markpoint():
                 response = json.dumps(response)
                 ws.send(response)
                 time.sleep(1)
-                '''
+
     else:
         return {"status": "error", "message": "request is not websocket"}
 
-def handler_websocket(ws):
-    while 1:
-        # try:
-        #    message = ws.receive()
-        # except WebSocketError:
-        #    break
-        # print(message)
-        position = []
-        for car in config.cars:
-            position.append({'name': car['name'], 'position': Tool.get_car_position(car['name'])})
-
-        response = {"status": "ok", "line": None, "markpoint": position}
-        response = json.dumps(response)
-        ws.send(response)
-        time.sleep(1)
 
 #@cross_origin()
 @app.route("/submit",methods=["GET","POST"])
 def submit():
-    print(request.get_data())
+    data = request.get_data()
+    data = json.loads(data.decode("utf-8"))
+    print(data)
+    for key in data:
+        print(key)
+        if key != 'car' and data[key] != '':
+            Connector().hset(data['car'],key,data[key])
+
     response = {"status": "ok"}
-    response = json.dumps(response)
-    return jsonify({"result":12})
+    return jsonify(response)
 
 if __name__=="__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)

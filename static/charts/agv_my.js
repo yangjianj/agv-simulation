@@ -37,8 +37,19 @@ $(function(){
         },
         tooltip: {
             formatter: function (params) {
+                console.log(params);
+                if (params.componentType == "markPoint"){
+                    var name = params.data.name;
+                    var speed = params.data.speed;
+                    var x = params.data.xAxis;
+                    var y = params.data.yAxis;
+                    return ('name:'+name+'</br>'
+                    +'speed:'+speed+'</br>'
+                    +'xy:'+x.toFixed(2)+','+y.toFixed(2)+'</br>'
+                    )
+                }
                 var data = params.data || [0, 0];
-                //return data[0].toFixed(2) + ', ' + data[1].toFixed(2);
+                return data[0].toFixed(2) + ', ' + data[1].toFixed(2);
             }
         },
         grid: {
@@ -161,7 +172,7 @@ $(function(){
     }
 
     sock.onmessage = function(e){
-        console.log("message recevice:"+e.data);
+        //console.log("message recevice:"+e.data);
         //var redata = eval(e.data);
         var redata =jQuery.parseJSON(e.data);
         if(redata.line != null){
@@ -212,7 +223,7 @@ $(function(){
             if(params[i].position != null){
                 nowdata[0].xAxis = params[i]['position'][0];
                 nowdata[0].yAxis = params[i]['position'][1];
-                console.log(nowdata);
+                //console.log(nowdata);
                 myChart.setOption({
                     series: [{
                             id: carname,  //改变对应object的值

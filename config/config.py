@@ -15,7 +15,7 @@ cars = [
 		'sites': {'1': [100, 900],'2': [300, 900],'3': [300, 700],'4': [100, 700],'5': [200, 500]},
         'markPoint': {
 	        'data':[
-				{'symbol': 'circle','value':'1','symbolSize':20,'xAxis':150,'yAxis':700},
+				{'name':'car1','value':'1','speed':0,'symbol': 'circle','symbolSize':20,'xAxis':150,'yAxis':700},
                 {'symbol': 'pin','value':'站点1','symbolSize':50,'xAxis':100,'yAxis':900},
                 {'symbol': 'pin','value':'站点2','symbolSize':50,'xAxis':300,'yAxis':700},
 	        ]
@@ -37,7 +37,7 @@ cars = [
 		'sites': {'1': [500, 300],'2': [500, 500],'3': [800, 500],'4': [800, 300],'5': [800, 200]},
 		'markPoint': {
 	        'data':[
-		        {'symbol': 'circle', 'value': '2', 'symbolSize': 20, 'xAxis': 700, 'yAxis': 300},
+		        {'name':'car2','value': '2','speed':0,'symbol': 'circle',  'symbolSize': 20, 'xAxis': 700, 'yAxis': 300},
 		        {'symbol': 'pin', 'value': '充电', 'xAxis': 800, 'yAxis': 200},
 	        ]
 	}

@@ -23,17 +23,19 @@ class Connector():
         return self.client.hset(name,key,value)
     
     def hget(self,name,key):
-        if self.client.hget(name,key):
-            return self.client.hget(name,key).decode('utf-8')
+        result = self.client.hget(name,key)
+        if result:
+            return result.decode('utf-8')
         else:
             return None
 
 if __name__ == '__main__':
     #Connector().set('d1','{"x":100,"y":200}')
-    Connector().hset('car1','target','[200,500]')
-    #re = Connector().get('d1').decode('utf-8')
+    #Connector().hset('car1','target','[200,500]')
+
     #print(re)
     #print(Connector().keys())
-   # print(Connector().hget('a','list1').decode('utf-8'))
+   # re = Connector().get('car1').decode('utf-8')
+   print(Connector().hget('car1','target'))
 
 

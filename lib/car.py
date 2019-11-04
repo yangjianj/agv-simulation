@@ -5,8 +5,8 @@ from lib.connector import Connector
 import lib.tool as Tool
 import config.config as config
 class Car():
-    def __init__(self,name,curr,target,sites,graph,speed):
-        self.curr = curr   #[0,0]
+    def __init__(self,name,position,target,sites,graph,speed):
+        self.position = position   #[0,0]
         self.target = target    #[100,100]
         self.path = None
         self.willpath = None
@@ -38,24 +38,24 @@ class Car():
         '''
     def get_near_site(self):
         for k,v in self.graph.items():
-            if self.curr == self.sites[k]:
+            if self.position == self.sites[k]:
                 return [k]
             else:
                 s1 = self.sites[k]
                 for dst in v:
                     s2 = self.sites[dst]
-                    #if Tool.three_point_online(s1,self.curr,s2):
-                    if Tool.three_point_like_line(s1,self.curr,s2,5):
+                    #if Tool.three_point_online(s1,self.position,s2):
+                    if Tool.three_point_like_line(s1,self.position,s2,5):
                         return [k,dst]
 
-    def compute_distance(self,curr=None,nextp=None):
+    def compute_distance(self,position=None,nextp=None):
         #计算当前点到下一站点的距离
-        if curr == None:
-            curr = self.curr
+        if position == None:
+            position = self.position
         if nextp == None:
             nextp = self.sites[self.willpath[0]]
-        x_dis = nextp[0]-curr[0]
-        y_dis =  nextp[1]-curr[1]
+        x_dis = nextp[0]-position[0]
+        y_dis =  nextp[1]-position[1]
         distance = math.sqrt((x_dis**2)+(y_dis**2))
         if distance != 0 :
             x_step = round(self.speed/distance,8)*(x_dis)
@@ -66,12 +66,12 @@ class Car():
         result = {'nextp':nextp,'distance':distance,'x_step':x_step,'y_step':y_step}
         return result
 
-    def compute_path_distance(self,curr=None,path=None):
+    def compute_path_distance(self,position=None,path=None):
         #计算当前坐标到路径终点的距离
-        if curr == None:
-            curr = self.curr
+        if position == None:
+            position = self.position
         distance = 0
-        tmps = curr
+        tmps = position
         for pxy in path:
             x_dis = self.sites[pxy][0] - tmps[0]
             y_dis = self.sites[pxy][1] - tmps[1]
@@ -84,9 +84,9 @@ class Car():
         if len(self.willpath) != 0:
             nextp = self.willpath[0]
             nextpxy = self.sites[nextp][:]
-            if abs(self.curr[0]-nextpxy[0])<=abs(self.x_step) and abs(self.curr[1]-nextpxy[1])<=abs(self.y_step):
-                self.x_step = nextpxy[0]-self.curr[0]
-                self.y_step = nextpxy[1]-self.curr[1]
+            if abs(self.position[0]-nextpxy[0])<=abs(self.x_step) and abs(self.position[1]-nextpxy[1])<=abs(self.y_step):
+                self.x_step = nextpxy[0]-self.position[0]
+                self.y_step = nextpxy[1]-self.position[1]
                 return nextpxy
             else:
                 return None
@@ -108,12 +108,12 @@ class Car():
         #待改进，暂没有运算路径间距离
         for near in nearsites:
             x=Tool.find_shartest_path(graph,near,target)
-            distance = self.compute_path_distance(self.curr,x)
+            distance = self.compute_path_distance(self.position,x)
             if not spath:
                 spath = [x,distance]
             elif distance<spath[1]:
                 spath = [x,distance]
-        dist = self.compute_distance(self.curr,self.sites[spath[0][0]])
+        dist = self.compute_distance(self.position,self.sites[spath[0][0]])
         self.path = spath[0]
         self.willpath = self.path
         self.x_step = dist['x_step']
@@ -135,50 +135,61 @@ class Car():
             if xy == v:
                 return k
 
-    def get_redis_message(self,key):
-        rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
-        return self.con.hget(self.name,key)
+    def set_car_msg(self,key,value):
+        #redis_key: self.name
+        #key :target,speed,status
+        return self.con.hset(self.name, key,value)
 
-    def set_redis_message(self,key,value=None):
+    def get_car_msg(self,key):
+        # redis_key: self.name
+        # key : name,target,speed,status
+        return self.con.hget(self.name, key)
+
+    def get_realtime_msg(self,key):
+        #redis_key: rediskey
+        #key: position
+        #rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
+        pass
+
+    def set_realtime_msg(self,key,value=None):
+        #key: name,status,osition,
         rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
         self.con.hset(rediskey, 'target', str(self.target))
         self.con.hset(rediskey, 'name', self.name)
-        self.con.hset(rediskey, 'position', str(self.curr))
+        self.con.hset(rediskey, 'position', str(self.position))
         self.con.hset(rediskey, 'status', self.status)
         self.con.hset(rediskey, 'id', self.id)
         self.con.hset(rediskey, key, value)
 
     def run(self):
-        #nextp = self.compute_distance()
-        #self.x_step = nextp['x_step']
-        #self.y_step = nextp['y_step']
-        self.con.hset(self.name, 'target',str(self.target))
-        self.con.hset(self.name, 'status','2')  #运行状态
+        self.set_car_msg('target',str(self.target))
+        self.set_car_msg('status',2) #运行状态
         while(1):
             print('willpath:',self.willpath)
-            Tool.set_car_position(self.name,str(self.curr))
+            Tool.set_car_position(self.name,str(self.position))
 
-            target = self.con.hget(self.name,'target')
-            status = self.con.hget(self.name,'status')
+            target = self.get_car_msg('target')
+            status = self.get_car_msg('status')
+            speed = self.get_car_msg('speed')
             targetxy = Tool.convert_xystr_xylist(target)
             if targetxy != self.target:
                 self.change_target(targetxy)
             else:
-                self.con.hset(self.name, 'curr', str(self.curr))
+                self.set_car_msg('position', str(self.position))
                 if len(self.willpath) == 0:  #完成工作
                     self.finished_work()
-                elif self.curr == self.sites[self.willpath[0]]:  # 切换nextp
+                elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
                     self.switch_nextpoint()
             self._align_step()
-            self.curr[0] = self.curr[0] + self.x_step
-            self.curr[1] = self.curr[1] + self.y_step
+            self.position[0] = self.position[0] + self.x_step
+            self.position[1] = self.position[1] + self.y_step
             time.sleep(1)
 
     def work(self):
         #到指定点去完成任务
         while (1):
             print('willpath:', self.willpath)
-            Tool.set_car_position(self.name, str(self.curr))
+            Tool.set_car_position(self.name, str(self.position))
 
             target = self.con.hget(self.name, 'target')
             status = self.con.hget(self.name, 'status')
@@ -186,15 +197,15 @@ class Car():
             if targetxy != self.target:
                 self.change_target(targetxy)
             else:
-                self.con.hset(self.name, 'curr', str(self.curr))
+                self.con.hset(self.name, 'position', str(self.position))
                 if len(self.willpath) == 0:
                     self.x_step = 0
                     self.y_step = 0
-                elif self.curr == self.sites[self.willpath[0]]:  # 切换nextp
+                elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
                     self.switch_nextpoint()
             self._align_step()
-            self.curr[0] = self.curr[0] + self.x_step
-            self.curr[1] = self.curr[1] + self.y_step
+            self.position[0] = self.position[0] + self.x_step
+            self.position[1] = self.position[1] + self.y_step
             time.sleep(1)
 
     def finished_work(self):
