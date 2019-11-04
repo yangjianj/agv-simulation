@@ -71,7 +71,7 @@ def three_point_like_line(p1,p2,p3,offset):
 	distance = []
 	for p in [p1,p2,p3]:
 		if p == p1:
-			next
+			continue
 		elif p == p3:
 			x_dis = p[0] - p2[0]
 			y_dis = p[1] - p2[1]
@@ -79,7 +79,8 @@ def three_point_like_line(p1,p2,p3,offset):
 		x_dis = p[0] - p1[0]
 		y_dis = p[1] - p1[1]
 		distance.append(math.sqrt((x_dis ** 2) + (y_dis ** 2)))
-	if distance[0]+distance[2] - distance[1] <= offset:
+	real = distance[0]+distance[1] - distance[2]
+	if distance[0]+distance[1] - distance[2] <= offset:
 		return True
 
 

@@ -13,7 +13,7 @@ class Car():
         self.sites = sites
         self.graph = graph
         self.speed = speed  #10
-        self.status = 'normal'
+        self.status = '0'   #0-空闲，1-完成任务，2-运行，3-红外防撞，4-空闲，5-暂停，6-货架举放中，7-充电，81-红外防撞，246-待机模式
         self.x_step = 0
         self.y_step = 0
         self.name = name
@@ -35,47 +35,7 @@ class Car():
             '3':['2','4'],
             '4':['1','3']
         }
-        
-
-
-    def change_target1(self,target):
-        if self.curr[0] != self.target[0] and self.curr[1] != self.target[1]:
-            pass
-        elif self.curr[0] != self.target[0]:
-            tmp = self.curr[0]
-            if  self.curr[0] < self.target[0]:
-                while(tmp<self.target[0]):
-                    tmp = tmp+self.speed
-                    if tmp>self.target[0]:
-                        self.path.append([self.curr[1], self.target[0]])
-                    else:
-                        self.path.append([self.curr[1],tmp])
-            else:
-                while (tmp > self.target[0]):
-                    tmp = tmp - self.speed
-                    if tmp < self.target[0]:
-                        self.path.append([self.curr[1], self.target[0]])
-                    else:
-                        self.path.append([self.curr[1], tmp])
-        elif self.curr[1] != self.target[1]:
-            tmp = self.curr[1]
-            if  self.curr[1] < self.target[1]:
-                while(tmp<self.target[1]):
-                    tmp = tmp+self.speed
-                    if tmp>self.target[1]:
-                        self.path.append([self.curr[0], self.target[1]])
-                    else:
-                        self.path.append([self.curr[0],tmp])
-            else:
-                while (tmp > self.target[1]):
-                    tmp = tmp - self.speed
-                    if tmp < self.target[1]:
-                        self.path.append([self.curr[0], self.target[1]])
-                    else:
-                        self.path.append([self.curr[0], tmp])
-
-        return self.path
-'''
+        '''
     def get_near_site(self):
         for k,v in self.graph.items():
             if self.curr == self.sites[k]:
@@ -84,10 +44,9 @@ class Car():
                 s1 = self.sites[k]
                 for dst in v:
                     s2 = self.sites[dst]
-                    if Tool.three_point_online(s1,self.curr,s2):
+                    #if Tool.three_point_online(s1,self.curr,s2):
+                    if Tool.three_point_like_line(s1,self.curr,s2,5):
                         return [k,dst]
-
-
 
     def compute_distance(self,curr=None,nextp=None):
         #计算当前点到下一站点的距离
@@ -133,15 +92,16 @@ class Car():
                 return None
 
     def change_target(self,target):
-        target = self._get_sites_key(target)
+        #target_p = self._get_sites_key(target)
         if self.target == target:
-            return self.target
+            return self.path
         else:
             self.target = target
         re = self._init_path(target)
         return re
 
     def _init_path(self,target):
+        #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
         target = self._get_sites_key(target)
         nearsites = self.get_near_site()
         spath = None
@@ -175,28 +135,53 @@ class Car():
             if xy == v:
                 return k
 
-    def redis_message(self,action,key,value=None):
+    def get_redis_message(self,key):
         rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
-        if action == 'hset':
-            self.con.hset(rediskey, 'target', str(self.target))
-            self.con.hset(rediskey, 'name', self.name)
-            self.con.hset(rediskey, 'position', str(self.curr))
-            self.con.hset(rediskey, 'status', self.status)
-            self.con.hset(rediskey, 'id', self.id)
-            self.con.hset(rediskey, key,value)
-        elif action == 'hget':
-            return self.con.hget(rediskey,key)
+        return self.con.hget(self.name,key)
+
+    def set_redis_message(self,key,value=None):
+        rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
+        self.con.hset(rediskey, 'target', str(self.target))
+        self.con.hset(rediskey, 'name', self.name)
+        self.con.hset(rediskey, 'position', str(self.curr))
+        self.con.hset(rediskey, 'status', self.status)
+        self.con.hset(rediskey, 'id', self.id)
+        self.con.hset(rediskey, key, value)
 
     def run(self):
-        nextp = self.compute_distance()
-        self.x_step = nextp['x_step']
-        self.y_step = nextp['y_step']
+        #nextp = self.compute_distance()
+        #self.x_step = nextp['x_step']
+        #self.y_step = nextp['y_step']
         self.con.hset(self.name, 'target',str(self.target))
+        self.con.hset(self.name, 'status','2')  #运行状态
         while(1):
             print('willpath:',self.willpath)
             Tool.set_car_position(self.name,str(self.curr))
 
             target = self.con.hget(self.name,'target')
+            status = self.con.hget(self.name,'status')
+            targetxy = Tool.convert_xystr_xylist(target)
+            if targetxy != self.target:
+                self.change_target(targetxy)
+            else:
+                self.con.hset(self.name, 'curr', str(self.curr))
+                if len(self.willpath) == 0:  #完成工作
+                    self.finished_work()
+                elif self.curr == self.sites[self.willpath[0]]:  # 切换nextp
+                    self.switch_nextpoint()
+            self._align_step()
+            self.curr[0] = self.curr[0] + self.x_step
+            self.curr[1] = self.curr[1] + self.y_step
+            time.sleep(1)
+
+    def work(self):
+        #到指定点去完成任务
+        while (1):
+            print('willpath:', self.willpath)
+            Tool.set_car_position(self.name, str(self.curr))
+
+            target = self.con.hget(self.name, 'target')
+            status = self.con.hget(self.name, 'status')
             targetxy = Tool.convert_xystr_xylist(target)
             if targetxy != self.target:
                 self.change_target(targetxy)
@@ -212,10 +197,35 @@ class Car():
             self.curr[1] = self.curr[1] + self.y_step
             time.sleep(1)
 
+    def finished_work(self):
+        self.status = '1'
+        self.con.hset(self.name, 'status',self.status)
+        self.speed = 0
+        self.y_step = 0
+        self.y_step = 0
+
     def loop(self):
+        #两点之间循环来回
         pass
 
 if __name__ == '__main__':
+    graph = {
+        '1': ['2', '4', '5'],
+        '2': ['1', '3'],
+        '3': ['2', '5'],
+        '4': ['1', '5'],
+        '5': ['3', '4', '1']
+    }
+    sites = {
+        '1': [100, 900],
+        '2': [300, 900],
+        '3': [300, 700],
+        '4': [100, 700],
+        '5': [200, 500]
+    }
+    car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
+    car.run()
+    '''
     cars = []
     for item in config.cars:
         id = item['name']
@@ -231,6 +241,6 @@ if __name__ == '__main__':
         t.start()
     for t in cars:
         t.join()
-
+    '''
 
 

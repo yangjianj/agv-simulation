@@ -38,7 +38,7 @@ $(function(){
         tooltip: {
             formatter: function (params) {
                 var data = params.data || [0, 0];
-                return data[0].toFixed(2) + ', ' + data[1].toFixed(2);
+                //return data[0].toFixed(2) + ', ' + data[1].toFixed(2);
             }
         },
         grid: {

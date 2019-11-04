@@ -5,14 +5,14 @@
    </head>
    <body style="height: 100%; margin: 0">
        <div id="container" style="height: 100%"></div>
-       <script type="text/javascript" src="echarts/echarts.min.js"></script>
-       <script type="text/javascript" src="echarts/echarts-gl.min.js"></script>
-       <script type="text/javascript" src="echarts/ecStat.min.js"></script>
-       <script type="text/javascript" src="echarts/dataTool.min.js"></script>
-       <script type="text/javascript" src="echarts/china.js"></script>
-       <script type="text/javascript" src="echarts/world.js"></script>
+       <script type="text/javascript" src="../charts/echarts.min.js"></script>
+       <script type="text/javascript" src="../charts/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="../charts/ecStat.min.js"></script>
+       <script type="text/javascript" src="../charts/dataTool.min.js"></script>
+       <script type="text/javascript" src="../charts/china.js"></script>
+       <script type="text/javascript" src="../charts/world.js"></script>
        <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script-->
-       <script type="text/javascript" src="echarts/bmap.min.js"></script>
+       <script type="text/javascript" src="../charts/bmap.min.js"></script>
        <script type="text/javascript">
 var dom = document.getElementById("container");
 var myChart = echarts.init(dom);
@@ -89,9 +89,13 @@ zr.on('click', function (params) {
 });
 
 zr.on('mousemove', function (params) {
+
+    //console.log('mouseover');
+    //console.log(params.offsetX,params.offsetY);
+    return params.offsetX.toFixed(2) + ', ' + params.offsetY.toFixed(2);
     var pointInPixel = [params.offsetX, params.offsetY];
     zr.setCursorStyle(myChart.containPixel('grid', pointInPixel) ? 'copy' : 'default');
-});
+    });
 ;
 if (option && typeof option === "object") {
     myChart.setOption(option, true);

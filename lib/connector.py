@@ -30,10 +30,10 @@ class Connector():
 
 if __name__ == '__main__':
     #Connector().set('d1','{"x":100,"y":200}')
-    Connector().hset('a','list1','[100,200]')
+    Connector().hset('car1','target','[200,500]')
     #re = Connector().get('d1').decode('utf-8')
     #print(re)
     #print(Connector().keys())
-    print(Connector().hget('a','list1').decode('utf-8'))
+   # print(Connector().hget('a','list1').decode('utf-8'))
 
 

@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
+from flask_cors import *
 import time,json,random
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,jsonify
 from geventwebsocket import WebSocketError
 from geventwebsocket.handler import WebSocketHandler
 from gevent.pywsgi import WSGIServer
+import threading
 from lib.connector import Connector
 import lib.tool as Tool
 import config.config as config
 
 app= Flask(__name__)
+CORS(app,resources={r'/*':{"origins": "*"}})
 
 @app.route("/")
 def index():
@@ -91,6 +94,9 @@ def websocket_markpoint():
             return {"status": "error", "message": "request is not websocket"}
         else:
             print("client connected")
+            th = threading.Thread(target = handler_websocket,args=(ws,))
+            th.start()
+            '''
             while 1:
                 # try:
                 #    message = ws.receive()
@@ -105,9 +111,33 @@ def websocket_markpoint():
                 response = json.dumps(response)
                 ws.send(response)
                 time.sleep(1)
-
+                '''
     else:
         return {"status": "error", "message": "request is not websocket"}
+
+def handler_websocket(ws):
+    while 1:
+        # try:
+        #    message = ws.receive()
+        # except WebSocketError:
+        #    break
+        # print(message)
+        position = []
+        for car in config.cars:
+            position.append({'name': car['name'], 'position': Tool.get_car_position(car['name'])})
+
+        response = {"status": "ok", "line": None, "markpoint": position}
+        response = json.dumps(response)
+        ws.send(response)
+        time.sleep(1)
+
+#@cross_origin()
+@app.route("/submit",methods=["GET","POST"])
+def submit():
+    print(request.get_data())
+    response = {"status": "ok"}
+    response = json.dumps(response)
+    return jsonify({"result":12})
 
 if __name__=="__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)
