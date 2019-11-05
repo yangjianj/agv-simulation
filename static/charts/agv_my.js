@@ -21,6 +21,7 @@ $(function(){
                 //animation:false,
                 markPoint:{
                            //symbol: 'pin',
+
                             data:[
                                 {symbol: 'circle',value:'1',symbolSize:20,xAxis:150,yAxis:700},
                                 //{symbol: 'pin',value:'站点1',symbolSize:50,xAxis:100,yAxis:900},

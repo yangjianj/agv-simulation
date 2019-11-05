@@ -103,6 +103,8 @@ class Car():
 
     def change_speed(self,speed):
         self.speed = float(speed)
+        if len(self.willpath) == 0:
+            return None
         dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
         self.x_step = dist['x_step']
         self.y_step = dist['y_step']
@@ -199,7 +201,7 @@ class Car():
             self.position[0] = self.position[0] + self.x_step
             self.position[1] = self.position[1] + self.y_step
             time.sleep(1)
-
+    '''
     def work(self):
         #到指定点去完成任务
         while (1):
@@ -222,7 +224,7 @@ class Car():
             self.position[0] = self.position[0] + self.x_step
             self.position[1] = self.position[1] + self.y_step
             time.sleep(1)
-
+    '''
     def finished_work(self):
         self.status = '1'
         self.speed = 0

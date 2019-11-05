@@ -14,6 +14,7 @@ cars = [
 		},
 		'sites': {'1': [100, 900],'2': [300, 900],'3': [300, 700],'4': [100, 700],'5': [200, 500]},
         'markPoint': {
+			'animation': True,
 	        'data':[
 				{'name':'car1','value':'1','speed':10,'symbol': 'circle','symbolSize':20,'xAxis':150,'yAxis':700},
                 {'symbol': 'pin','value':'站点1','symbolSize':50,'xAxis':100,'yAxis':900},

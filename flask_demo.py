@@ -106,7 +106,6 @@ def websocket_markpoint():
                 #    break
                 # print(message)
                 position = []
-                print('in while')
                 for car in config.cars:
                     position.append({'name': car['name'], 'data': Tool.get_car_realtime_msg(car['name'])})
 
