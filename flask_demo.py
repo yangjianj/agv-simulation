@@ -112,7 +112,7 @@ def websocket_markpoint():
                 response = {"status": "ok","line":None,"markpoint": position}
                 response = json.dumps(response)
                 ws.send(response)
-                time.sleep(1)
+                time.sleep(config.INTERVAL)
 
     else:
         return {"status": "error", "message": "request is not websocket"}
@@ -124,26 +124,23 @@ def submit():
     data = request.get_data()
     data = json.loads(data.decode("utf-8"))
     print(data)
-    for key in data:
-        if key != 'car' and data[key] != '':
-            if key == 'speed':
-                try:
+    result = {}
+    try:
+        for key in data:
+            if key != 'car' and data[key] != '':
+                if key == 'speed':
                     float(data[key])
                     Connector().hset(data['car'], key, data[key])
-                except Exception as e:
-                    print('input speed error!')
-            elif key == 'target' and type(eval(data[key])) == type([]):
-                try:
+                elif key == 'target' and type(eval(data[key])) == type([]):
                     float(eval(data[key])[0])+float(eval(data[key])[1])
                     Connector().hset(data['car'], key, data[key])
-                except Exception as e:
-                    print('input target error!')
-                    print(e)
-            else:
-                Connector().hset(data['car'],key,data[key])
-
-    response = {"status": "ok"}
-    return jsonify(response)
+                else:
+                    Connector().hset(data['car'],key,data[key])
+        result['status'] = 'ok'
+    except Exception as e:
+        print(e)
+        result['status'] = 'error'
+    return jsonify(result)
 
 if __name__=="__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)

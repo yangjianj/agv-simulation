@@ -42,7 +42,7 @@ def find_shartest_path(graph, start, end, path=[]):
 	return shortestPath
 
 def get_car_realtime_msg(name):
-	gettime = time.time()-1
+	gettime = time.time()-config.INTERVAL
 	rediskey = name+'_'+time.strftime('%Y%m%d-%H%M%S',time.localtime(gettime))
 	try:
 		pstr=con.hget(rediskey,'position')

@@ -1,9 +1,10 @@
 import time,copy,re
+from datetime import datetime
 print(1<2<3)
 
 print(round(2/3,2))
-
-print(time.strftime('%Y%m%d-%H%M%S'))
+print(datetime.now().strftime('%Y%m%d-%H%M%S%f'))
+print(time.strftime('%Y%m%d-%H%M%S%f'))
 
 x = {
 	'4': ['1', '5'],

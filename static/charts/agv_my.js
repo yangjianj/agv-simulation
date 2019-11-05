@@ -222,7 +222,7 @@ $(function(){
             nowdata = newseries[i].markPoint.data;
             console.log(params);
 
-            if(params[i].data.position != null){
+            if(params[i].data != null){
                 nowdata[0].xAxis = params[i]['data']['position'][0];
                 nowdata[0].yAxis = params[i]['data']['position'][1];
                 nowdata[0].speed = params[i]['data']['speed'];

@@ -18,10 +18,13 @@ $("#submit").click(function(){
         data:JSON.stringify(data),  //json数组
         dataType:'json',
         success:function(data){
-        console.log('success');
+            //var response = jQuery.parseJSON(data);
+            if(data.status != 'ok'){
+                alert('input params error !')
+            }
         },
         error:function(error){
-         console.log(error)
+            console.log(error)
         }
 
    })

@@ -200,7 +200,7 @@ class Car():
             self._align_step()
             self.position[0] = self.position[0] + self.x_step
             self.position[1] = self.position[1] + self.y_step
-            time.sleep(1)
+            time.sleep(config.INTERVAL)
     '''
     def work(self):
         #到指定点去完成任务
