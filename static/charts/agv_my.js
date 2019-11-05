@@ -172,7 +172,7 @@ $(function(){
     }
 
     sock.onmessage = function(e){
-        //console.log("message recevice:"+e.data);
+        console.log("message recevice:"+e.data);
         //var redata = eval(e.data);
         var redata =jQuery.parseJSON(e.data);
         if(redata.line != null){
@@ -219,10 +219,12 @@ $(function(){
         for(var i=0;i<params.length;i++){
             carname = params[i].name;
             nowdata = newseries[i].markPoint.data;
+            console.log(params);
 
-            if(params[i].position != null){
-                nowdata[0].xAxis = params[i]['position'][0];
-                nowdata[0].yAxis = params[i]['position'][1];
+            if(params[i].data.position != null){
+                nowdata[0].xAxis = params[i]['data']['position'][0];
+                nowdata[0].yAxis = params[i]['data']['position'][1];
+                nowdata[0].speed = params[i]['data']['speed'];
                 //console.log(nowdata);
                 myChart.setOption({
                     series: [{

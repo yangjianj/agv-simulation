@@ -41,19 +41,22 @@ def find_shartest_path(graph, start, end, path=[]):
 					shortestPath = newpath
 	return shortestPath
 
-def get_car_position(name):
+def get_car_realtime_msg(name):
 	gettime = time.time()-1
 	rediskey = name+'_'+time.strftime('%Y%m%d-%H%M%S',time.localtime(gettime))
-	pstr=con.hget(rediskey,'poistion')
-	if pstr:
-		return convert_xystr_xylist(pstr)
-	else:
+	try:
+		pstr=con.hget(rediskey,'position')
+		speed = con.hget(rediskey,'speed')
+		result = {}
+		result['position'] = convert_xystr_xylist(pstr)
+		result['speed'] = float(speed)
+		return result
+	except Exception as e:
 		return None
 
-def set_car_position(name,position):
+def set_car_realtime_msg(name,key,value):
 	rediskey = name + '_' + time.strftime('%Y%m%d-%H%M%S')
-	print(rediskey,'poistion',position)
-	con.hset(rediskey,'poistion',position)
+	con.hset(rediskey,key,value)
 
 def three_point_online(p1, p2, p3):
 	#判断三点按此顺序在一条直线上线

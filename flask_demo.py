@@ -106,8 +106,9 @@ def websocket_markpoint():
                 #    break
                 # print(message)
                 position = []
+                print('in while')
                 for car in config.cars:
-                    position.append({'name': car['name'], 'position': Tool.get_car_position(car['name'])})
+                    position.append({'name': car['name'], 'data': Tool.get_car_realtime_msg(car['name'])})
 
                 response = {"status": "ok","line":None,"markpoint": position}
                 response = json.dumps(response)
@@ -125,9 +126,22 @@ def submit():
     data = json.loads(data.decode("utf-8"))
     print(data)
     for key in data:
-        print(key)
         if key != 'car' and data[key] != '':
-            Connector().hset(data['car'],key,data[key])
+            if key == 'speed':
+                try:
+                    float(data[key])
+                    Connector().hset(data['car'], key, data[key])
+                except Exception as e:
+                    print('input speed error!')
+            elif key == 'target' and type(eval(data[key])) == type([]):
+                try:
+                    float(eval(data[key])[0])+float(eval(data[key])[1])
+                    Connector().hset(data['car'], key, data[key])
+                except Exception as e:
+                    print('input target error!')
+                    print(e)
+            else:
+                Connector().hset(data['car'],key,data[key])
 
     response = {"status": "ok"}
     return jsonify(response)

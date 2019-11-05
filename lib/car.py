@@ -18,8 +18,8 @@ class Car():
         self.y_step = 0
         self.name = name
         self.id = 'ax001'
-        self._init_path(target)
         self.con = Connector()
+        self._init_path(target)
 
         '''
         self.sites = {
@@ -45,7 +45,7 @@ class Car():
                 for dst in v:
                     s2 = self.sites[dst]
                     #if Tool.three_point_online(s1,self.position,s2):
-                    if Tool.three_point_like_line(s1,self.position,s2,5):
+                    if Tool.three_point_like_line(s1,self.position,s2,3):
                         return [k,dst]
 
     def compute_distance(self,position=None,nextp=None):
@@ -95,29 +95,42 @@ class Car():
         #target_p = self._get_sites_key(target)
         if self.target == target:
             return self.path
-        else:
-            self.target = target
+        self.target = target
+        if self.speed == 0:
+            self.speed = 10
         re = self._init_path(target)
         return re
 
-    def _init_path(self,target):
-        #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
-        target = self._get_sites_key(target)
-        nearsites = self.get_near_site()
-        spath = None
-        #待改进，暂没有运算路径间距离
-        for near in nearsites:
-            x=Tool.find_shartest_path(graph,near,target)
-            distance = self.compute_path_distance(self.position,x)
-            if not spath:
-                spath = [x,distance]
-            elif distance<spath[1]:
-                spath = [x,distance]
-        dist = self.compute_distance(self.position,self.sites[spath[0][0]])
-        self.path = spath[0]
-        self.willpath = self.path
+    def change_speed(self,speed):
+        self.speed = float(speed)
+        dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
         self.x_step = dist['x_step']
         self.y_step = dist['y_step']
+        self.set_car_msg('speed', str(self.speed))
+
+    def _init_path(self,target):
+        #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
+        try:
+            target = self._get_sites_key(target)
+            nearsites = self.get_near_site()
+            spath = None
+            #待改进，暂没有运算路径间距离
+            for near in nearsites:
+                x=Tool.find_shartest_path(graph,near,target)
+                distance = self.compute_path_distance(self.position,x)
+                if not spath:
+                    spath = [x,distance]
+                elif distance<spath[1]:
+                    spath = [x,distance]
+            dist = self.compute_distance(self.position,self.sites[spath[0][0]])
+            self.path = spath[0]
+            self.x_step = dist['x_step']
+            self.y_step = dist['y_step']
+        except Exception as e:
+            print(e)
+        self.willpath = self.path
+        self.set_car_msg('target', str(self.target))
+        self.set_car_msg('speed', str(self.speed))
         return self.path
 
     def switch_nextpoint(self):
@@ -162,11 +175,11 @@ class Car():
         self.con.hset(rediskey, key, value)
 
     def run(self):
-        self.set_car_msg('target',str(self.target))
         self.set_car_msg('status',2) #运行状态
         while(1):
             print('willpath:',self.willpath)
-            Tool.set_car_position(self.name,str(self.position))
+            Tool.set_car_realtime_msg(self.name,'position',str(self.position))
+            Tool.set_car_realtime_msg(self.name, 'speed', str(self.speed))
 
             target = self.get_car_msg('target')
             status = self.get_car_msg('status')
@@ -174,6 +187,8 @@ class Car():
             targetxy = Tool.convert_xystr_xylist(target)
             if targetxy != self.target:
                 self.change_target(targetxy)
+            elif speed != str(self.speed):
+                self.change_speed(speed)
             else:
                 self.set_car_msg('position', str(self.position))
                 if len(self.willpath) == 0:  #完成工作
@@ -210,10 +225,11 @@ class Car():
 
     def finished_work(self):
         self.status = '1'
-        self.con.hset(self.name, 'status',self.status)
         self.speed = 0
         self.y_step = 0
         self.y_step = 0
+        self.set_car_msg('speed', str(self.speed))
+        self.set_car_msg('status', self.status)  # 运行状态
 
     def loop(self):
         #两点之间循环来回
@@ -236,6 +252,7 @@ if __name__ == '__main__':
     }
     car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
     car.run()
+
     '''
     cars = []
     for item in config.cars:

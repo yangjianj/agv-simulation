@@ -1,4 +1,4 @@
-import time,copy
+import time,copy,re
 print(1<2<3)
 
 print(round(2/3,2))
@@ -76,3 +76,9 @@ print(t)
 print(time.localtime(t))
 print(time.localtime(t-1))
 
+print(float('12.36'))
+xx = '[100,200]'
+print(type(eval(xx)) == type([]))
+
+ret = re.match('^\[\]$',xx)
+print(ret)
