@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import math,time,json
-import threading
+import threading,argparse
 from lib.connector import Connector
 import lib.tool as Tool
 import config.config as config
@@ -232,10 +232,10 @@ if __name__ == '__main__':
         '4': [100, 700],
         '5': [200, 500]
     }
-    #car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
-    #car.run()
-
-
+    '''
+    car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
+    car.run()
+    '''
     cars = []
     for item in config.cars:
         id = item['name']
@@ -251,6 +251,7 @@ if __name__ == '__main__':
         t.start()
     for t in cars:
         t.join()
+
 
 
 
