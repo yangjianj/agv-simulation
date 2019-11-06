@@ -181,7 +181,8 @@ $(function(){
             addpoint(line)
         }else{
             var pointlist = redata.markpoint ;
-            change_position(pointlist);
+            var point = redata.markpoint ;
+            change_position(point);
         }
     }
 
@@ -201,22 +202,33 @@ $(function(){
                 obj1.data = linedata;
                 obj1.markPoint = markPoint;
                 newseries.push(obj1);
-                /*
-                myChart.setOption({
-                    series: [{
-                        id: name,
-                        data: linedata
-                    }]
-                }); */
         }
          myChart.setOption({
                     series: newseries
                 });
-
-        
     }
 
     function change_position(params){  //改变markpoint 位置
+
+        var carname = params.data.name;
+        var markpoint_data = null;
+        for (var i=0;i<newseries.length;i++){
+            if(newseries[i].id == params.data.name){
+                newseries[i].markPoint.data[0].xAxis = params.data.position[0];
+                newseries[i].markPoint.data[0].yAxis = params.data.position[1];
+                newseries[i].markPoint.data[0].speed = params.data.speed;
+                markpoint_data = newseries[i].markPoint.data;
+            }
+        }
+        myChart.setOption({
+                    series: [{
+                            id: carname,  //改变对应object的值
+                            markPoint:{
+                                   data:markpoint_data
+                                    },
+                    }]
+                });
+        /*
         for(var i=0;i<params.length;i++){
             carname = params[i].name;
             nowdata = newseries[i].markPoint.data;
@@ -238,6 +250,7 @@ $(function(){
             }
 
         }
+        */
     }
 
 })

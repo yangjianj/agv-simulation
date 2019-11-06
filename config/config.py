@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-INTERVAL = 1
+CAR_MESSAGE_TOPIC = 'car_message'
+INTERVAL = 1  #小车运行时间单位
 cars = [
 	{
 		'name': 'car1',

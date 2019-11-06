@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import math,time
+import math,time,json
 import threading
 from lib.connector import Connector
 import lib.tool as Tool
@@ -180,9 +180,10 @@ class Car():
         self.set_car_msg('status',2) #运行状态
         while(1):
             print('willpath:',self.willpath)
-            Tool.set_car_realtime_msg(self.name,'position',str(self.position))
-            Tool.set_car_realtime_msg(self.name, 'speed', str(self.speed))
-
+            real_message = {'name':self.name,'position':self.position,'speed':self.speed}
+            Tool.publish(config.CAR_MESSAGE_TOPIC,json.dumps(real_message))
+            #Tool.set_car_realtime_msg(self.name,'position',str(self.position))
+            #Tool.set_car_realtime_msg(self.name, 'speed', str(self.speed))
             target = self.get_car_msg('target')
             status = self.get_car_msg('status')
             speed = self.get_car_msg('speed')
@@ -252,10 +253,10 @@ if __name__ == '__main__':
         '4': [100, 700],
         '5': [200, 500]
     }
-    car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
-    car.run()
+    #car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
+    #car.run()
 
-    '''
+
     cars = []
     for item in config.cars:
         id = item['name']
@@ -271,6 +272,6 @@ if __name__ == '__main__':
         t.start()
     for t in cars:
         t.join()
-    '''
+
 
 

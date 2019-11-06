@@ -29,13 +29,29 @@ class Connector():
         else:
             return None
 
+    def subscribe(self,topic):
+        ps = self.client.pubsub()
+        ps.subscribe(topic)
+        return ps.listen()
+
+    def publish(self,topic,message):
+        try:
+            self.client.publish(topic,message)
+            return True
+        except Exception as error:
+            print(error)
+            return None
+
 if __name__ == '__main__':
     #Connector().set('d1','{"x":100,"y":200}')
     #Connector().hset('car1','target','[200,500]')
-
+    con = Connector()
     #print(re)
     #print(Connector().keys())
    # re = Connector().get('car1').decode('utf-8')
-   print(Connector().hget('car1','target'))
+   # print(Connector().hget('car1','target'))
+
+    for item in con.subscribe('topic1'):
+        print(item)
 
 

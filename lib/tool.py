@@ -41,6 +41,7 @@ def find_shartest_path(graph, start, end, path=[]):
 					shortestPath = newpath
 	return shortestPath
 
+''' 
 def get_car_realtime_msg(name):
 	gettime = time.time()-config.INTERVAL
 	rediskey = name+'_'+time.strftime('%Y%m%d-%H%M%S',time.localtime(gettime))
@@ -57,6 +58,13 @@ def get_car_realtime_msg(name):
 def set_car_realtime_msg(name,key,value):
 	rediskey = name + '_' + time.strftime('%Y%m%d-%H%M%S')
 	con.hset(rediskey,key,value)
+'''
+
+def subscribe(topic):
+	return con.subscribe(topic)
+
+def publish(topic, message):
+	return con.publish(topic, message)
 
 def three_point_online(p1, p2, p3):
 	#判断三点按此顺序在一条直线上线

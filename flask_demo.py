@@ -98,7 +98,16 @@ def websocket_markpoint():
             #th = threading.Thread(target = Tool.handler_websocket,args=(ws,))
             #th.start()
             #return {"status": "ok", "message": "connect is aliving"}
-
+            for message in Tool.subscribe(config.CAR_MESSAGE_TOPIC):
+                message['channel'] = message['channel'].decode('utf-8')
+                if type(message['data']).__name__ == 'bytes':
+                    message['data'] = message['data'].decode('utf-8')
+                    message['data'] = json.loads(message['data'])
+                response = {"status": "ok", "line": None, "markpoint":message}
+                response = json.dumps(response)
+                ws.send(response)
+                #time.sleep(config.INTERVAL)
+            '''
             while 1:
                 # try:
                 #    message = ws.receive()
@@ -113,7 +122,7 @@ def websocket_markpoint():
                 response = json.dumps(response)
                 ws.send(response)
                 time.sleep(config.INTERVAL)
-
+                '''
     else:
         return {"status": "error", "message": "request is not websocket"}
 
