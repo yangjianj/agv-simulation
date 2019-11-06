@@ -103,7 +103,7 @@ class Car():
             spath = None
             #待改进，暂没有运算路径间距离
             for near in nearsites:
-                x=Tool.find_shartest_path(graph,near,target)
+                x=Tool.find_shartest_path(self.graph,near,target)
                 distance = self.compute_path_distance(self.position,x)
                 if not spath:
                     spath = [x,distance]
@@ -218,14 +218,14 @@ class Car():
         pass
 
 if __name__ == '__main__':
-    graph = {
+    graph1 = {
         '1': ['2', '4', '5'],
         '2': ['1', '3'],
         '3': ['2', '5'],
         '4': ['1', '5'],
         '5': ['3', '4', '1']
     }
-    sites = {
+    sites1 = {
         '1': [100, 900],
         '2': [300, 900],
         '3': [300, 700],
@@ -235,23 +235,28 @@ if __name__ == '__main__':
     '''
     car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
     car.run()
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-e', help='eeeeee')
+    parser.add_argument('-x', help='xxx', action='store_true')
+    args = parser.parse_args()
+    print(args.e)
     '''
+
     cars = []
     for item in config.cars:
         id = item['name']
         start = item['poistion']
         target = item['target']
         sites = item['sites']
-        graph = item['graph']
+        graph0 = item['graph']
         speed = item['speed']
-        car = Car(id,start,target,sites,graph,speed)
+        car = Car(id,start,target,sites,graph0,speed)
         #car.run()
         t=threading.Thread(target=car.run,args=())
         cars.append(t)
         t.start()
     for t in cars:
         t.join()
-
-
 
 
