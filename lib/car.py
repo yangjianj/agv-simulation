@@ -21,21 +21,6 @@ class Car():
         self.con = Connector()
         self._init_path(target)
 
-        '''
-        self.sites = {
-            '1':[100, 900],
-            '2':[300, 900],
-            '3':[300, 700],
-            '4':[100, 700]
-        }
-
-        self.graph = {
-            '1':['2','4'],
-            '2':['1','3'],
-            '3':['2','4'],
-            '4':['1','3']
-        }
-        '''
     def get_near_site(self):
         for k,v in self.graph.items():
             if self.position == self.sites[k]:
@@ -159,12 +144,6 @@ class Car():
         # redis_key: self.name
         # key : name,target,speed,status
         return self.con.hget(self.name, key)
-
-    def get_realtime_msg(self,key):
-        #redis_key: rediskey
-        #key: position
-        #rediskey = self.name + '_' + time.strftime('%Y%m%d-%H%M%S')
-        pass
 
     def set_realtime_msg(self,key,value=None):
         #key: name,status,osition,

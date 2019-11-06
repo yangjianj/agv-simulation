@@ -30,6 +30,6 @@
 
 redis数据暂存格式：    
 key  value  
-
 car1_20191031-101005 {'position':'[200,500]','speed':'10'} #上传位置信息
-car1 {'name':'car1','target':'[300,900]','status':'normal','id':'ax001'} #与外界交互信息
+消息队列传输小车实时信息：    
+{'name':'car1','target':'[300,900]','status':'normal','id':'ax001'} 
