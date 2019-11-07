@@ -21,9 +21,12 @@ def index():
 @app.route("/get_json")
 def get_json():
     response = {"status":"ok","data":[]}
+    response["data"] = config.cars
+    '''
     for index in range(len(config.cars)):
         name = config.cars[index]['name']
         response["data"].append({"id":index,"name":name})
+        '''
     return json.dumps(response)
 
 @app.route("/wsocket")

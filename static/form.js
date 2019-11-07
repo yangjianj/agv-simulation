@@ -8,6 +8,8 @@ $(function(){
         data:dd
     });
     */
+    var carsdata = null;
+    getData();
 
 $("#submit").click(function(){
   //var targetUrl = $("#addForm").attr("action");
@@ -39,8 +41,50 @@ $("#submit").click(function(){
 return false   //不重新加载页面
 })
 
-function select_first(){
+    function getData(){
+        $.ajax({
+             type: "GET",
+             url: 'http://127.0.0.1:8080/get_json',
+             data: {},
+             dataType: "json",
+             success: function(response){
+             console.log(response);
+             carsdata = response.data;
+                var html = '';
+               for(var i=0;i<carsdata.length;i++){
+                html +='<option value="'+carsdata[i].name+'">'+carsdata[i].name+'</option>';
+               }
+               $('#cc').append(html);
 
-}
+               //$('#cc').val(id);
+               var htmlx = '';
+               for(var k in carsdata[0].sites) {
+                    htmlx += '<option value="[' + carsdata[0].sites[k] + ']">[' + carsdata[0].sites[k] + ']</option>';
+                }
+                $('#cc1').children().remove();
+                $('#cc1').append(htmlx);
+             },
+             error:function(e){
+             console.log('error:',e);
+             }
+         });}
+
+$("#cc").change(function(){
+
+    var selected = $("#cc").val();
+    for(var i=0;i<carsdata.length;i++){
+        if(selected == carsdata[i].name){
+            //console.log(carsdata[i].sites);
+            var html = '';
+            for(var k in carsdata[i].sites) {
+                html += '<option value="[' + carsdata[i].sites[k] + ']">[' + carsdata[i].sites[k] + ']</option>';
+            }
+            $('#cc1').children().remove();
+            $('#cc1').append(html);
+        }
+    }
+});
+
+
 
 })

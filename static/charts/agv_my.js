@@ -114,7 +114,7 @@ $(function(){
     var sock = null;
     var serversocket = "ws://127.0.0.1:8080/markpoint";
     sock = new WebSocket(serversocket);
-    getData();
+
     var zr = myChart.getZr();
 
 /*
@@ -228,29 +228,5 @@ $(function(){
                     }]
                 });
     }
-
-
-function getData(){
-        $.ajax({
-             type: "GET",
-             url: 'http://127.0.0.1:8080/get_json',
-             data: {},
-             dataType: "json",
-             success: function(response){
-             console.log(response);
-             var data = response.data;
-                //var data1 = [{'id':1,'name':'yy'},{'id':2,'name':'ii'}];
-                var html = '<option value="">请选择</option>';
-               for(var i=0;i<data.length;i++){
-                html +='<option value="'+data[i].name+'">'+data[i].name+'</option>';
-               }
-               $('#cc').append(html);
-
-               //$('#cc').val(id);
-             },
-             error:function(e){
-             console.log('error:',e);
-             }
-         });}
 
 })
