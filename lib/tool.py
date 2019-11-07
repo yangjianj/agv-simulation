@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 import math,time,copy,json
+import logging
 from lib.connector import Connector
 import config.config as config
 con = Connector()
+
 
 # 找出一条路径
 def find_a_path(graph, start, end, path=[]):
@@ -75,7 +77,6 @@ def three_point_like_line(p1,p2,p3,offset):
 	if distance[0]+distance[1] - distance[2] <= offset:
 		return True
 
-
 def build_line(sgraph,path=[]):
 	# 根据图生成line
 	graph = copy.deepcopy(sgraph)
@@ -108,7 +109,6 @@ def build_line(sgraph,path=[]):
 		build_line(graph, path)
 	return path
 
-
 def convert_xystr_xylist(pstr):
 	p = pstr.replace('[', '')
 	p = p.replace(']', '')
@@ -116,6 +116,24 @@ def convert_xystr_xylist(pstr):
 	p[0] = float(p[0])
 	p[1] = float(p[1])
 	return p
+
+def log_info(msg,file):
+	logger = logging.getLogger()
+	logger.setLevel(level=logging.INFO)
+	handler = logging.FileHandler(file)
+	formatter = logging.Formatter('%(asctime)s -%(message)s')
+	handler.setFormatter(formatter)
+	logger.addHandler(handler)
+	logger.info(msg)
+
+def log_error(msg,file):
+	logger = logging.getLogger()
+	handler = logging.FileHandler(file)
+	formatter = logging.Formatter('%(asctime)s -%(message)s')
+	handler.setFormatter(formatter)
+	logger.addHandler(handler)
+	logger.error(msg)
+
 
 
 if __name__ == '__main__':

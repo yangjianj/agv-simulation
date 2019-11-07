@@ -114,7 +114,7 @@ $(function(){
     var sock = null;
     var serversocket = "ws://127.0.0.1:8080/markpoint";
     sock = new WebSocket(serversocket);
-
+    getData();
     var zr = myChart.getZr();
 
 /*
@@ -163,7 +163,6 @@ $(function(){
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
-
 
     sock.onopen = function(){
         console.log("connect to "+serversocket);
@@ -228,29 +227,30 @@ $(function(){
                                     },
                     }]
                 });
-        /*
-        for(var i=0;i<params.length;i++){
-            carname = params[i].name;
-            nowdata = newseries[i].markPoint.data;
-            console.log(params);
-
-            if(params[i].data != null){
-                nowdata[0].xAxis = params[i]['data']['position'][0];
-                nowdata[0].yAxis = params[i]['data']['position'][1];
-                nowdata[0].speed = params[i]['data']['speed'];
-                //console.log(nowdata);
-                myChart.setOption({
-                    series: [{
-                            id: carname,  //改变对应object的值
-                            markPoint:{
-                                   data:nowdata
-                                    },
-                    }]
-                });
-            }
-
-        }
-        */
     }
+
+
+function getData(){
+        $.ajax({
+             type: "GET",
+             url: 'http://127.0.0.1:8080/get_json',
+             data: {},
+             dataType: "json",
+             success: function(response){
+             console.log(response);
+             var data = response.data;
+                //var data1 = [{'id':1,'name':'yy'},{'id':2,'name':'ii'}];
+                var html = '<option value="">请选择</option>';
+               for(var i=0;i<data.length;i++){
+                html +='<option value="'+data[i].name+'">'+data[i].name+'</option>';
+               }
+               $('#cc').append(html);
+
+               //$('#cc').val(id);
+             },
+             error:function(e){
+             console.log('error:',e);
+             }
+         });}
 
 })

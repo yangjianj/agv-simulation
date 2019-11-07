@@ -1,6 +1,15 @@
 $(function(){
-$("#submit").click(function(){
+    /*
+    var dd = [{'id':1,'text':'yyy'},{'id':2,'text':'ii'}]
+    $('#cc').combobox({
+        //url:'127.0.0.1:8080/get_json',
+        valueField:'id',
+        textField:'text',
+        data:dd
+    });
+    */
 
+$("#submit").click(function(){
   //var targetUrl = $("#addForm").attr("action");
   //var data = $("#ff").serialize();
   var fileds = $("#ff").serializeArray();  //form表单生成数组
@@ -14,7 +23,7 @@ $("#submit").click(function(){
    $.ajax({
         type:'POST',
         url:'http://127.0.0.1:8080/submit',
-       contentType:"application/json; charset=utf-8",
+        contentType:"application/json; charset=utf-8",
         data:JSON.stringify(data),  //json数组
         dataType:'json',
         success:function(data){
@@ -26,13 +35,12 @@ $("#submit").click(function(){
         error:function(error){
             console.log(error)
         }
-
    })
 return false   //不重新加载页面
 })
 
- function jsonpcallback(data){
- var re = JSON.serialize(data);
- console.log(re);
- }
+function select_first(){
+
+}
+
 })

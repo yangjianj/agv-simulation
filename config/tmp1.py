@@ -1,4 +1,4 @@
-import time,redis,json,argparse
+import time,redis,json,argparse,logging
 
 r = redis.Redis(host='127.0.0.1',port=6379,db=0)
 
@@ -34,9 +34,16 @@ sites = {
 
 print(find_shartest_path(graph,'5','2',[]))
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-e',help='eeeeee')
-parser.add_argument('-x',help='xxx',action='store_true')
-args = parser.parse_args()
-print(args.e)
 
+
+while(1):
+    logger = logging.getLogger()
+    logger.setLevel(level=logging.INFO)
+    handler = logging.FileHandler('test.log')
+    formatter = logging.Formatter('%(asctime)s: %(levelname)s- %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.info('123456788')
+    logger.warning('waring   1236665')
+    logger.error('ajsbhdfohabsdpfgbpsaid')
+    time.sleep(2)

@@ -159,8 +159,9 @@ class Car():
         self.set_car_msg('status',2) #运行状态
         while(1):
             print('willpath:',self.willpath)
-            real_message = {'name':self.name,'position':self.position,'speed':self.speed}
+            real_message = {'name':self.name,'position':self.position,'speed':self.speed,'timestamp':time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC,json.dumps(real_message))
+            Tool.log_info(json.dumps(real_message),config.CAR_REALTIME_LOG)
             #Tool.set_car_realtime_msg(self.name,'position',str(self.position))
             #Tool.set_car_realtime_msg(self.name, 'speed', str(self.speed))
             target = self.get_car_msg('target')
@@ -235,12 +236,7 @@ if __name__ == '__main__':
     '''
     car = Car('car1', [100, 900], [200, 500], sites, graph, 10)
     car.run()
-    
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-e', help='eeeeee')
-    parser.add_argument('-x', help='xxx', action='store_true')
-    args = parser.parse_args()
-    print(args.e)
+
     '''
 
     cars = []
