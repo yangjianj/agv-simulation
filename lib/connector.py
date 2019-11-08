@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import redis
+import config.config as config
 
 '''
 {"podDir":0,"robotDir":180,"battery":88,"speed":0,"posX":36087,"timeStamp":"2019-10-10,15:40:54","posY":31648,"load":0,"commandPath":0,
@@ -8,7 +9,7 @@ import redis
 
 class Connector():
     def __init__(self):
-        self.client = redis.Redis(host='127.0.0.1',port=6379,db=0)
+        self.client = redis.Redis(host=config.REDIS_HOST,port=config.REDIS_PORT,db=0)
 
     def set(self,key,value):
         return self.client.set(key,value)

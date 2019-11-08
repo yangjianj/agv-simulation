@@ -5,6 +5,8 @@ CAR_MESSAGE_TOPIC = 'car_message'
 INTERVAL = 1  #小车运行时间单位
 CAR_REALTIME_LOG = os.path.join(BASEDIR,'config/realtime.log')
 SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
+REDIS_HOST = '127.0.0.1'
+REDIS_PORT = 6379
 
 cars = [
 	{
