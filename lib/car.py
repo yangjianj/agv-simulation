@@ -101,14 +101,14 @@ class Car():
             target = self._get_sites_key(target)
             nearsites = self.get_near_site()
             spath = None
-            #待改进，暂没有运算路径间距离
             for near in nearsites:
-                x=Tool.find_shartest_path(self.graph,near,target)
-                distance = self.compute_path_distance(self.position,x)
-                if not spath:
-                    spath = [x,distance]
-                elif distance<spath[1]:
-                    spath = [x,distance]
+                plist=Tool.find_shartest_path(self.graph,near,target)
+                for p in plist:
+                    distance = self.compute_path_distance(self.position,p)
+                    if not spath:
+                        spath = [p,distance]
+                    elif distance<spath[1]:
+                        spath = [p,distance]
             dist = self.compute_distance(self.position,self.sites[spath[0][0]])
             self.path = spath[0]
             self.x_step = dist['x_step']

@@ -31,16 +31,19 @@ def find_all_path(graph, start, end, path=[]):
 	return paths
 
 def find_shartest_path(graph, start, end, path=[]):
+	#返回最短路径列表
 	path = path + [start]
 	if start == end:
-		return path
+		return [path]
 	shortestPath = []
 	for node in graph[start]:
 		if node not in path:
 			newpath = find_shartest_path(graph, node, end, path)
 			if newpath:
-				if not shortestPath or len(newpath) < len(shortestPath):
+				if not shortestPath or len(newpath[0]) < len(shortestPath[0]):
 					shortestPath = newpath
+				elif shortestPath and len(newpath[0]) == len(shortestPath[0]):
+					shortestPath.append(newpath[0])
 	return shortestPath
 
 def subscribe(topic):
@@ -51,13 +54,11 @@ def publish(topic, message):
 
 def three_point_online(p1, p2, p3):
 	#判断三点按此顺序在一条直线上线
-	if p3[1] != p1[1]:
-		if (p2[0] - p1[0]) / (p2[1] - p1[1]) == (p3[0] - p3[0]) / (p3[1] - p1[1]) and (p2[0] - p1[0]) * (
-				p2[0] - p3[0]) <= 0:
+	if p1[0] != 0:
+		if round(p1[1]/p1[0],5) == round(p2[1]/p2[0]) == round(p3[1]/p3[0],5) and p1[0]<=p2[0]<=p3[0]:
 			return True
-	else:
-		if p2[1] == p1[1] and (p2[0] - p1[0]) * (p2[0] - p3[0]) <= 0:
-			return True
+	elif round(p1[0]/p1[1],5) == round(p2[0]/p2[1]) == round(p3[0]/p3[1],5) and p1[1]<=p2[1]<=p3[1]:
+		return True
 
 def three_point_like_line(p1,p2,p3,offset):
 	#找出离当前点最近的两个点，并且当前点在所找两点的直线之间,允许偏移offset
@@ -137,4 +138,4 @@ def log_error(msg,file):
 
 
 if __name__ == '__main__':
-	print(three_point_like_line([10,0],[20,0],[30,1],0.005))
+	print(find_shartest_path(config.cars[1]['graph'], '2', '5', path=[]))
