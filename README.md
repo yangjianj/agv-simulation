@@ -1,4 +1,13 @@
 # agv-simulation
+###使用介绍  
+1.lib/car.py文件启动多辆小车    
+2.启动flask    
+3.启动redis服务器    
+4.打开agv-simulator.html    
+
+### 效果图  
+![avatar](static/img/agv-car.png)
+
 项目介绍：  
 使用web项目模拟智能小车运动轨迹，页面展现运动轨迹，支持设置运动参数    
 1.websocket保持前后台通信，后台数据实时更新到前台       
