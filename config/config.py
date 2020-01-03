@@ -8,6 +8,21 @@ SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
+#3D平台mqtt服务器信息
+MQTT_HOST = '10.129.5.11'
+MQTT_PORT = 1883
+CAR_TOPIC = 'mqtt1' #'/test/mq'   #mqtt1
+KEEPALIVE = 60
+QOS = 0
+'''format
+[{
+ "name": "car1",
+ "position": {x:100, y:100,z:200},
+ "speed": 10,
+ "timestamp": "2020-01-03,10:48:32"
+}]
+'''
+
 cars = [
 	{
 		'name': 'car1',
