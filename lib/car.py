@@ -82,18 +82,20 @@ class Car():
             return self.path
         self.target = target
         if self.speed == 0:
-            self.speed = 10
+            self.speed = config.DEFAULT_SPEED
         re = self._init_path(target)
+        Tool.log_info("change_target: %s target to: %s" % (self.name, self.target),config.CAR_STATUS_LOG)
         return re
 
     def change_speed(self,speed):
-        self.speed = float(speed)
+        self.speed = float(speed)/config.INTERVAL
         if len(self.willpath) == 0:
             return None
         dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
         self.x_step = dist['x_step']
         self.y_step = dist['y_step']
         self.set_car_msg('speed', str(self.speed))
+        Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
 
     def _init_path(self,target):
         #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
@@ -168,42 +170,18 @@ class Car():
             targetxy = Tool.convert_xystr_xylist(target)
             if targetxy != self.target:
                 self.change_target(targetxy)
-            elif speed != str(self.speed):
+            if speed != str(self.speed):
                 self.change_speed(speed)
-            else:
-                self.set_car_msg('position', str(self.position))
-                if len(self.willpath) == 0:  #完成工作
-                    self.finished_work()
-                elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
-                    self.switch_nextpoint()
+            self.set_car_msg('position', str(self.position))
+            if len(self.willpath) == 0:  #完成工作
+                self.finished_work()
+            elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
+                self.switch_nextpoint()
             self._align_step()
             self.position[0] = self.position[0] + self.x_step
             self.position[1] = self.position[1] + self.y_step
-            time.sleep(config.INTERVAL)
-    '''
-    def work(self):
-        #到指定点去完成任务
-        while (1):
-            print('willpath:', self.willpath)
-            Tool.set_car_position(self.name, str(self.position))
+            time.sleep(1/config.INTERVAL)
 
-            target = self.con.hget(self.name, 'target')
-            status = self.con.hget(self.name, 'status')
-            targetxy = Tool.convert_xystr_xylist(target)
-            if targetxy != self.target:
-                self.change_target(targetxy)
-            else:
-                self.con.hset(self.name, 'position', str(self.position))
-                if len(self.willpath) == 0:
-                    self.x_step = 0
-                    self.y_step = 0
-                elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
-                    self.switch_nextpoint()
-            self._align_step()
-            self.position[0] = self.position[0] + self.x_step
-            self.position[1] = self.position[1] + self.y_step
-            time.sleep(1)
-    '''
     def finished_work(self):
         self.status = '1'
         self.speed = 0

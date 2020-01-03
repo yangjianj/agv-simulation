@@ -2,7 +2,8 @@
 import os
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAR_MESSAGE_TOPIC = 'car_message'
-INTERVAL = 1  #小车运行时间单位
+INTERVAL = 5.0  #小车运行时间单位1/5
+DEFAULT_SPEED = 10/INTERVAL
 CAR_STATUS_LOG = os.path.join(BASEDIR,'config/realtime.log')
 SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
 REDIS_HOST = '127.0.0.1'
@@ -27,7 +28,7 @@ cars = [
 	{
 		'name': 'car1',
 		'id': 'ax001',
-		'speed': 10,
+		'speed': 10/INTERVAL,
 		'poistion': [300, 900],
 		'target': [200, 500],
 		'graph': {
@@ -51,7 +52,7 @@ cars = [
 {
 		'name': 'car2',
 		'id': 'ax002',
-		'speed': 10,
+		'speed': 10/INTERVAL,
 		'poistion': [500, 300],
 		'target': [800, 300],
 		'graph': {
