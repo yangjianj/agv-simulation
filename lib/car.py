@@ -161,9 +161,7 @@ class Car():
             print('willpath:',self.willpath)
             real_message = {'name':self.name,'position':self.position,'speed':self.speed,'timestamp':time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC,json.dumps(real_message))
-            Tool.log_info(json.dumps(real_message),config.CAR_REALTIME_LOG)
-            #Tool.set_car_realtime_msg(self.name,'position',str(self.position))
-            #Tool.set_car_realtime_msg(self.name, 'speed', str(self.speed))
+            #Tool.log_info(json.dumps(real_message),config.CAR_REALTIME_LOG)
             target = self.get_car_msg('target')
             status = self.get_car_msg('status')
             speed = self.get_car_msg('speed')
