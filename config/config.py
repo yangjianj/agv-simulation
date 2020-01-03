@@ -2,10 +2,12 @@
 import os
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAR_MESSAGE_TOPIC = 'car_message'
-INTERVAL = 5.0  #小车运行时间单位1/5
+INTERVAL = 5.0  #每秒上报5次位置信息
 DEFAULT_SPEED = 10/INTERVAL
 CAR_STATUS_LOG = os.path.join(BASEDIR,'config/realtime.log')
 SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
+
+#本地Redis服务器，与web信息交互
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
@@ -24,6 +26,7 @@ QOS = 0
 }]
 '''
 
+#模拟小车数据
 cars = [
 	{
 		'name': 'car1',
