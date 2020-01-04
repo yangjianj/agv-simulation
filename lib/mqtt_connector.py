@@ -38,7 +38,7 @@ class MqttConnecter():
         self.client.disconnect()
 
 def on_connect(client, userdata, flags, rc):
-    print("Connected with result code: " + str(rc))
+    print("Mqtt connected with result code: " + str(rc))
 
 def on_message(client, userdata, msg):
     print('resived message: '+'topic: '+msg.topic + "; message: " + str(msg.payload))

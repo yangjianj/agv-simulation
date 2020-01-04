@@ -160,7 +160,7 @@ class Car():
     def run(self):
         self.set_car_msg('status',2) #运行状态
         while(1):
-            print('willpath:',self.willpath)
+            print(self.name,'willpath:',self.willpath)
             real_message = {'name':self.name,'position':self.position,'speed':self.speed,'timestamp':time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC,json.dumps(real_message))
             #Tool.log_info(json.dumps(real_message),config.CAR_REALTIME_LOG)

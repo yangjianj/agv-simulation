@@ -56,22 +56,12 @@ def websocket_connect():
                     'target': [800, 200]
                 },
             ]
-
             postdata = [{"offsetX":0,"offsetY":0},{"offsetX":0,"offsetY":0}]
             for i in range(50):
-                #try:
-                #    message = ws.receive()
-                #except WebSocketError:
-                #    break
-                #print(message)
-
-                #data = [data_generate(30),data_generate(30)]
-
                 postdata[0]["offsetX"] = data1[i%4][0]+random.randint(0,15)
                 postdata[0]["offsetY"] = data1[i%4][1]+random.randint(0,15)
                 postdata[1]["offsetX"] = data2[i%4][0]+random.randint(0,15)
                 postdata[1]["offsetY"] = data2[i%4][1]+random.randint(0,15)
-
                 response = {"status":"ok","message":postdata}
                 response = json.dumps(response)
                 ws.send(response)
@@ -88,13 +78,13 @@ def websocket_markpoint():
         linexy = []
         for index in range(len(config.cars)):
             linedata.append(Tool.build_line(config.cars[index]['graph'],path=[]))
-            tmp = {'name':config.cars[index]['name'],'data':[],'markPoint':config.cars[index]['markPoint']}
+            tmp = {'name':config.cars[index]['name'],'data':[],'markPoint':config.cars[index]['markPoint'],'color':config.cars[index]['color']}
             for line in linedata[index]:
                 for p in line:
                     tmp['data'].append(config.cars[index]['sites'][p])
             linexy.append(tmp)
 
-        response = {"status": "ok", "line": linexy,"markpoint":None}  #发送路径信息给前端
+        response = {"status": "ok", "line": linexy,"markpoint":None}  #初始化路径信息
         response = json.dumps(response)
         ws.send(response)
 
@@ -102,17 +92,15 @@ def websocket_markpoint():
             return {"status": "error", "message": "request is not websocket"}
         else:
             print("client connected")
-            #th = threading.Thread(target = Tool.handler_websocket,args=(ws,))
-            #th.start()
-            #return {"status": "ok", "message": "connect is aliving"}
             for message in Tool.subscribe(config.CAR_MESSAGE_TOPIC):
                 message['channel'] = message['channel'].decode('utf-8')
                 if type(message['data']).__name__ == 'bytes':
                     message['data'] = message['data'].decode('utf-8')
                     message['data'] = json.loads(message['data'])
-                response = {"status": "ok", "line": None, "markpoint":message}
-                response = json.dumps(response)
-                ws.send(response)
+                if type(message['data']) is dict:
+                    response = {"status": "ok", "line": None, "markpoint":message}
+                    response = json.dumps(response)
+                    ws.send(response)
                 #time.sleep(config.INTERVAL)
             '''
             while 1:
@@ -142,17 +130,20 @@ def submit():
     print(data)
     result = {}
     try:
-        for key in data:
-            if key != 'car' and data[key] != '':
-                if key == 'speed':
-                    float(data[key])
-                    Connector().hset(data['car'], key, data[key])
-                elif key == 'target' and type(eval(data[key])) == type([]):
-                    float(eval(data[key])[0])+float(eval(data[key])[1])
-                    Connector().hset(data['car'], key, data[key])
-                else:
-                    Connector().hset(data['car'],key,data[key])
+        if data['speed'] != '':
+            float(data['speed'])
+            Connector().hset(data['car'], 'speed', data['speed'])
+        if data['source'] != '':
+            float(eval(data['source'])[0])+float(eval(data['source'])[1])
+            Connector().hset(data['car'], 'source', data['source'])
+        if data['target'] != '':
+            float(eval(data['target'])[0])+float(eval(data['target'])[1])
+            Connector().hset(data['car'], 'target', data['target'])
+        if data['status'] != '':
+            float(data['status'])
+            Connector().hset(data['car'], 'status', data['status'])
         result['status'] = 'ok'
+
     except Exception as e:
         print(e)
         result['status'] = 'error'

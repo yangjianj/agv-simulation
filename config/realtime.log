@@ -148,3 +148,2422 @@
 2020-01-03 16:48:28,140 -change_speed: car1 speed to: 10.0
 2020-01-03 16:48:28,140 -change_speed: car1 speed to: 10.0
 2020-01-03 16:48:28,140 -change_speed: car1 speed to: 10.0
+2020-01-04 13:54:03,937 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 13:54:03,954 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:03,954 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:28,771 -change_target: car1 target to: [1000.0, 7000.0]
+2020-01-04 13:54:28,771 -change_target: car1 target to: [1000.0, 7000.0]
+2020-01-04 13:54:28,771 -change_target: car1 target to: [1000.0, 7000.0]
+2020-01-04 13:54:28,773 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:28,773 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:28,773 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:28,773 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,769 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:54:45,769 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:54:45,769 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:54:45,769 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:54:45,769 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:54:45,771 -change_speed: car1 speed to: 0.0
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,194 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:55:33,197 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,533 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:35,535 -change_speed: car1 speed to: 0.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:56:40,059 -change_speed: car1 speed to: 100.0
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,421 -change_target: car1 target to: [3000.0, 9000.0]
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:38,423 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:57:43,153 -change_speed: car1 speed to: 10.0
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,557 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 13:59:30,561 -change_speed: car2 speed to: 10.0
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,978 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:00:01,980 -change_speed: car3 speed to: 10.0
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,378 -change_target: car1 target to: [2000.0, 5000.0]
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,382 -change_speed: car1 speed to: 0.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:02,600 -change_speed: car1 speed to: 10.0
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,623 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:05:55,627 -change_speed: car2 speed to: 10.0
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,701 -change_target: car3 target to: [3000.0, 0.0]
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:10:05,704 -change_speed: car3 speed to: 10.0
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,136 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:13:16,143 -change_speed: car1 speed to: 10.0
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,763 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:16:06,766 -change_speed: car2 speed to: 10.0
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,650 -change_target: car3 target to: [4000.0, 4000.0]
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:19:26,655 -change_speed: car3 speed to: 10.0
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,548 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:21:06,555 -change_speed: car1 speed to: 10.0
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,185 -change_target: car2 target to: [5000.0, 3000.0]
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:25:55,198 -change_speed: car2 speed to: 10.0
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,915 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:26:05,920 -change_speed: car3 speed to: 10.0
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,461 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:51,464 -change_speed: car2 speed to: 10.0
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,473 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:36:56,478 -change_speed: car1 speed to: 10.0
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,282 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,285 -change_speed: car3 speed to: 0.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:37:06,494 -change_speed: car3 speed to: 10.0
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,572 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:42:53,577 -change_speed: car2 speed to: 10.0
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,954 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:48:14,958 -change_speed: car1 speed to: 10.0
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,160 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:49:08,165 -change_speed: car3 speed to: 10.0
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,518 -change_target: car2 target to: [5000.0, 5000.0]
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 14:54:54,524 -change_speed: car2 speed to: 10.0
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,864 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:14,869 -change_speed: car1 speed to: 10.0
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,348 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:01:47,354 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,612 -change_target: car1 target to: [3000.0, 7000.0]
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:06,618 -change_speed: car1 speed to: 10.0
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,184 -change_target: car2 target to: [8000.0, 2000.0]
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,194 -change_speed: car2 speed to: 0.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:14,405 -change_speed: car2 speed to: 10.0
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,449 -change_target: car3 target to: [4000.0, 0.0]
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:14:20,455 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,927 -change_target: car3 target to: [3000.0, 4000.0]
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:06,959 -change_speed: car3 speed to: 10.0
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,090 -change_target: car2 target to: [8000.0, 5000.0]
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:21,098 -change_speed: car2 speed to: 10.0
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,154 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 15:34:27,162 -change_speed: car1 speed to: 10.0
+2020-01-04 16:50:45,991 -change_target: car1 target to: [1000.0, 9000.0]
+2020-01-04 16:50:45,992 -change_speed: car1 speed to: 0.0
+2020-01-04 16:50:45,992 -change_speed: car1 speed to: 0.0
+2020-01-04 17:29:08,236 -change_target: car1 target to: [1000.0, 9000.0]

@@ -62,15 +62,15 @@ $(function(){
         },
         xAxis: {
             min: 0,
-            max: 1000,
-            interval: 100,
+            max: 10000,
+            interval: 1000,
             type: 'value',
             axisLine: {onZero: false}
         },
         yAxis: {
             min: 0,
-            max: 1000,
-            interval: 100,
+            max: 10000,
+            interval: 1000,
             type: 'value',
             axisLine: {onZero: false}
         },
@@ -87,26 +87,9 @@ $(function(){
                            //symbol: 'pin',
                             data:[
                                 //{symbol: 'circle',value:'1',symbolSize:20,xAxis:150,yAxis:700},
-                                //{symbol: 'pin',value:'站点1',symbolSize:50,xAxis:100,yAxis:900},
-                                //{symbol: 'pin',value:'站点2',symbolSize:50,xAxis:300,yAxis:700},
                                ]
                             },
                 data: linedata.data[0]
-            },
-            {
-                id: linedata.name[1],
-                type: 'line',
-                smooth: false,
-                color: '#ff0000',
-                symbolSize: symbolSize,
-                markPoint:{
-                            symbol: 'circle',
-                            data:[
-                                //{symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:300},
-                                //{symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
-                                ]
-                            },
-                data: linedata.data[1]
             }
         ]
     };
@@ -129,26 +112,6 @@ $(function(){
                 series: [{
                     id: 'a',
                     data: data,
-                }]
-            });
-        }
-    });
-    zr.on('click', function (params) {
-        var pointInPixel = [params.offsetX, params.offsetY];
-        var pointInGrid = myChart.convertFromPixel('grid', pointInPixel);
-
-        if (myChart.containPixel('grid', pointInPixel)) {
-            //data.push(pointInGrid);
-            myChart.setOption({
-                series: [{
-                    id: linedata.name[1],
-                    markPoint:{
-                            symbol: 'circle',
-                            data:[
-                                {symbol: 'circle',value:'2',symbolSize:20,xAxis:700,yAxis:400},
-                                {symbol: 'pin',value:'充电',xAxis:800,yAxis:200},
-                                ]
-                            },
                 }]
             });
         }
@@ -177,7 +140,7 @@ $(function(){
         var redata =jQuery.parseJSON(e.data);
         if(redata.line != null){
             var line = redata.line ;
-            addpoint(line)
+            addpoint(line)   //根据获取数据初始化图像
         }else{
             var pointlist = redata.markpoint ;
             var point = redata.markpoint ;
@@ -193,13 +156,11 @@ $(function(){
     function addpoint(params){   //line 增加端点
 
         for(var i=0;i<params.length;i++){
-                var name = params[i]['name'];
-                var linedata = params[i]['data'];
-                var markPoint = params[i]['markPoint'];
                 var obj1=Object.assign({},series_template);
-                obj1.id = name;
-                obj1.data = linedata;
-                obj1.markPoint = markPoint;
+                obj1.id = params[i]['name'];
+                obj1.data = params[i]['data'];
+                obj1.markPoint = params[i]['markPoint'];
+                obj1.color = params[i]['color'];
                 newseries.push(obj1);
         }
          myChart.setOption({
@@ -219,6 +180,7 @@ $(function(){
                 markpoint_data = newseries[i].markPoint.data;
             }
         }
+
         myChart.setOption({
                     series: [{
                             id: carname,  //改变对应object的值
@@ -228,5 +190,4 @@ $(function(){
                     }]
                 });
     }
-
 })

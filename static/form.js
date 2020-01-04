@@ -55,14 +55,19 @@ return false   //不重新加载页面
                 html +='<option value="'+carsdata[i].name+'">'+carsdata[i].name+'</option>';
                }
                $('#cc').append(html);
-
-               //$('#cc').val(id);
                var htmlx = '';
                for(var k in carsdata[0].sites) {
                     htmlx += '<option value="[' + carsdata[0].sites[k] + ']">[' + carsdata[0].sites[k] + ']</option>';
                 }
                 $('#cc1').children().remove();
                 $('#cc1').append(htmlx);
+                //src
+               var htmlx = '';
+               for(var k in carsdata[0].sites) {
+                    htmlx += '<option value="[' + carsdata[0].sites[k] + ']">[' + carsdata[0].sites[k] + ']</option>';
+                }
+                $('#src').children().remove();
+                $('#src').append(htmlx);
              },
              error:function(e){
              console.log('error:',e);
@@ -81,10 +86,9 @@ $("#cc").change(function(){
             }
             $('#cc1').children().remove();
             $('#cc1').append(html);
+            $('#src').children().remove();
+            $('#src').append(html);
         }
     }
 });
-
-
-
 })
