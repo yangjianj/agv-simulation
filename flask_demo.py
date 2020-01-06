@@ -140,10 +140,12 @@ def submit():
             float(eval(data['target'])[0])+float(eval(data['target'])[1])
             Connector().hset(data['car'], 'target', data['target'])
         if data['status'] != '':
-            float(data['status'])
-            Connector().hset(data['car'], 'status', data['status'])
+            s_code = config.CAR_STATUS_MAP[data['status']]
+            Connector().hset(data['car'], 'status', s_code)
+        if data['mode'] != '':
+            m_code = config.CAR_MODE_MAP[data['mode']]
+            Connector().hset(data['car'], 'mode', m_code)
         result['status'] = 'ok'
-
     except Exception as e:
         print(e)
         result['status'] = 'error'

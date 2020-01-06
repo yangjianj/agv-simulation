@@ -6,8 +6,8 @@ import lib.tool as Tool
 import config.config as config
 class Car():
     def __init__(self,name,position,target,sites,graph,speed):
-        self.position = position
-        self.source = position
+        self.position = position[:]
+        self.source = position[:]
         self.target = target
         self.path = None
         self.willpath = None
@@ -19,8 +19,10 @@ class Car():
         self.y_step = 0
         self.name = name
         self.id = 'ax001'
+        self.mode = '0'
+        self.status = None
         self.con = Connector()
-        self._init_path(target)
+
 
     def get_near_site(self):
         for k,v in self.graph.items():
@@ -78,13 +80,14 @@ class Car():
                 return None
 
     def change_target(self,target):
+        print('change target ',target)
         #target_p = self._get_sites_key(target)
         if self.target == target:
             return self.path
         self.target = target
         if self.speed == 0:
             self.speed = config.DEFAULT_SPEED
-        re = self._init_path(target)
+        re = self._init_path()
         Tool.log_info("change_target: %s target to: %s" % (self.name, self.target),config.CAR_STATUS_LOG)
         return re
 
@@ -98,8 +101,9 @@ class Car():
         self.set_car_msg('speed', str(self.speed))
         Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
 
-    def _init_path(self,target):
+    def _init_path(self):
         #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
+        target = self.target
         try:
             target = self._get_sites_key(target)
             nearsites = self.get_near_site()
@@ -160,14 +164,23 @@ class Car():
 
     def run(self):
         self.set_car_msg('status',config.CAR_STATUS_MAP['run']) #运行状态
+        self.set_car_msg('mode',config.CAR_MODE_MAP['normal'])
+        self._init_path()
         while(1):
             real_message = {'name':self.name,'position':self.position,'speed':self.speed,'timestamp':time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC,json.dumps(real_message))
-            #Tool.log_info(json.dumps(real_message),config.CAR_REALTIME_LOG)
+            source = self.get_car_msg('source')
             target = self.get_car_msg('target')
             status = self.get_car_msg('status')
             speed = self.get_car_msg('speed')
+            mode = self.get_car_msg('mode')
             targetxy = Tool.convert_xystr_xylist(target)
+            car_msg = {'source': source, 'target': target, 'status': status, 'speed': speed,'mode': mode}
+            print(self.speed)
+            print(self.target)
+            mode = self._switch_mode(car_msg)
+            if mode == True:
+                continue
             if targetxy != self.target:
                 self.change_target(targetxy)
             if speed != str(self.speed):
@@ -183,25 +196,45 @@ class Car():
             self.position[1] = self.position[1] + self.y_step
             time.sleep(1/config.INTERVAL)
 
-    def loop_mode(self,src,dst):
-        self.set_car_msg('status', config.CAR_STATUS_MAP['loop'])  # 循环模式
-        self.source = src
-        self.target = dst
-        while(1):
+    def _loop_mode(self,src,dst):
+        print('in loop mode')
+        #两点之间循环的工作模式
+        self.mode = config.CAR_MODE_MAP['loop']
+        self.set_car_msg('mode', config.CAR_MODE_MAP['loop'])  # 循环模式
+        self.source = src[:]
+        self.target = dst[:]
+        self.position = src[:]
+        self._init_path()
+        while(self.mode == config.CAR_MODE_MAP['loop']):
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
                             'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            source = self.get_car_msg('source')
             target = self.get_car_msg('target')
             status = self.get_car_msg('status')
             speed = self.get_car_msg('speed')
+            mode = self.get_car_msg('mode')
+            sourcexy = Tool.convert_xystr_xylist(source)
             targetxy = Tool.convert_xystr_xylist(target)
-            if status != config.CAR_STATUS_MAP['loop']:
-                break
+            if self.mode != mode:
+                self.mode = mode
+                return True
+            if self.target != targetxy and self.target != sourcexy:
+                self.source = sourcexy[:]
+                self.target = targetxy[:]
+                self.position = self.source[:]
+                self._init_path()
+                print(self.source)
+                print(self.target)
+                print(222222)
             if speed != str(self.speed):
                 self.change_speed(speed)
             self.set_car_msg('position', str(self.position))
             if len(self.willpath) == 0:  # 完成一遍路径，转换source,target进行下一遍循环
-                tmp = self.taregt
+                print('one loop finished')
+                print(self.source)
+                print(self.target)
+                tmp = self.target
                 self.change_target(self.source)
                 self.source = tmp
             elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
@@ -211,17 +244,33 @@ class Car():
             self.position[0] = self.position[0] + self.x_step
             self.position[1] = self.position[1] + self.y_step
             time.sleep(1 / config.INTERVAL)
+        return False
+
+    def _switch_mode(self,car_msg):
+        if car_msg['mode'] == config.CAR_MODE_MAP["loop"]:
+            sourcexy = Tool.convert_xystr_xylist(car_msg['source'])
+            targetxy = Tool.convert_xystr_xylist(car_msg['target'])
+            self._loop_mode(sourcexy,targetxy)
+        if self.status == car_msg['mode']:
+            pass
+    
+    def _switch_status(self,car_msg):
+        if car_msg['status'] == config.CAR_STATUS_MAP['stop']:
+            self.set_car_msg('status', str(self.position))
 
     def finished_work(self):
-        self.status = '1'
-        self.speed = 0
+        self.status = config.CAR_STATUS_MAP['idel']
         self.y_step = 0
         self.y_step = 0
-        self.set_car_msg('speed', str(self.speed))
+        #self.set_car_msg('speed', str(self.speed))
         self.set_car_msg('status', self.status)  # 运行状态
 
-    def loop(self):
-        #两点之间循环来回
+    def _energy_profiler(self):
+        #检测电量，不足时让小车进入充电站充电
+        pass
+
+    def _position_conflict(self):
+        #防止小车碰撞
         pass
 
 if __name__ == '__main__':
@@ -246,7 +295,11 @@ if __name__ == '__main__':
     '''
 
     cars = []
+    x=0
     for item in config.cars:
+        x = x+1
+        if x != 1:
+            continue
         id = item['name']
         start = item['poistion']
         target = item['target']
