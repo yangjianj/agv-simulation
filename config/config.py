@@ -2,8 +2,8 @@
 import os
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAR_MESSAGE_TOPIC = 'car_message'
-INTERVAL = 5.0  #每秒上报5次位置信息
-DEFAULT_SPEED = 20/INTERVAL
+INTERVAL = 5  #每秒上报5次位置信息
+DEFAULT_SPEED = 20
 CAR_STATUS_LOG = os.path.join(BASEDIR,'config/realtime.log')
 SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
 

@@ -20,7 +20,7 @@ def index():
 
 @app.route("/get_json")
 def get_json():
-    response = {"status":"ok","data":[]}
+    response = {"status":"ok","data":[],'workmode':list(config.CAR_MODE_MAP.keys())}
     response["data"] = config.cars
     '''
     for index in range(len(config.cars)):

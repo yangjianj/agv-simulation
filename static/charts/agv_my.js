@@ -135,7 +135,7 @@ $(function(){
     }
 
     sock.onmessage = function(e){
-        console.log("message recevice:"+e.data);
+        //console.log("message recevice:"+e.data);
         //var redata = eval(e.data);
         var redata =jQuery.parseJSON(e.data);
         if(redata.line != null){

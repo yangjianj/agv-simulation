@@ -48,19 +48,30 @@ return false   //不重新加载页面
              data: {},
              dataType: "json",
              success: function(response){
+                 console.log('in get_json');
              console.log(response);
              carsdata = response.data;
-                var html = '';
+                var html_name = '';
                for(var i=0;i<carsdata.length;i++){
-                html +='<option value="'+carsdata[i].name+'">'+carsdata[i].name+'</option>';
+                html_name +='<option value="'+carsdata[i].name+'">'+carsdata[i].name+'</option>';
                }
-               $('#cc').append(html);
+               $('#cc').append(html_name);
+
                var htmlx = '';
                for(var k in carsdata[0].sites) {
                     htmlx += '<option value="[' + carsdata[0].sites[k] + ']">[' + carsdata[0].sites[k] + ']</option>';
                 }
                 $('#cc1').children().remove();
                 $('#cc1').append(htmlx);
+                $('#src').children().remove();
+                $('#src').append(htmlx);
+
+                var html_mode = '';
+               for(var i=0;i<response.workmode.length;i++){
+                html_mode +='<option value="'+response.workmode[i]+'">'+response.workmode[i]+'</option>';
+               }
+               $('#mode').append(html_mode);
+                /*
                 //src
                var htmlx = '';
                for(var k in carsdata[0].sites) {
@@ -68,11 +79,13 @@ return false   //不重新加载页面
                 }
                 $('#src').children().remove();
                 $('#src').append(htmlx);
+                */
              },
              error:function(e){
              console.log('error:',e);
              }
          });}
+
 
 $("#cc").change(function(){
 
