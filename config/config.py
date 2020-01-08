@@ -30,7 +30,7 @@ QOS = 0
 #status : 0-空闲，1-完成任务，2-运行，3-红外防撞，5-暂停，6-货架举放中，7-充电，81-红外防撞，246-待机模式,
 #mode: 0-normal 1-loop
 CAR_STATUS_MAP = {'idel':'0','finish':'1','run':'2','pause':'5','charge':'7','stop':'9',}
-CAR_MODE_MAP = {'normal':'0','loop':'1'}
+CAR_MODE_MAP = {'normal':'0','loop':'1','add':'2'}
 cars = [
 	{
 		'name': 'car1',
@@ -100,7 +100,7 @@ cars = [
 	        'animationDuratio':50,
 	        'data':[
 		        {'name':'car2','value': '3','speed':10,'symbol': 'circle',  'symbolSize': 20, 'xAxis': 3000, 'yAxis': 4000},
-		        {'symbol': 'pin', 'value': '充电', 'xAxis': 3000, 'yAxis': 3000},
+		        {'symbol': 'pin', 'value': '充电', 'xAxis': 3000, 'yAxis': 4000},
 	        ]
 	}
 }

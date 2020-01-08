@@ -134,11 +134,11 @@ def submit():
             float(data['speed'])
             Connector().hset(data['car'], 'speed', data['speed'])
         if data['source'] != '':
-            float(eval(data['source'])[0])+float(eval(data['source'])[1])
             Connector().hset(data['car'], 'source', data['source'])
         if data['target'] != '':
-            float(eval(data['target'])[0])+float(eval(data['target'])[1])
             Connector().hset(data['car'], 'target', data['target'])
+        if data['appoint'] != '':
+            Connector().hset(data['car'], 'appoint', data['appoint'])
         if data['status'] != '':
             s_code = config.CAR_STATUS_MAP[data['status']]
             Connector().hset(data['car'], 'status', s_code)

@@ -10,6 +10,7 @@ class Car():
         self.source = position[:]
         self.target = target
         self.path = None
+        self.path_appoint = False  #指定路径标志，默认为最短路径
         self.willpath = None
         self.sites = sites
         self.graph = graph
@@ -86,7 +87,7 @@ class Car():
         self.target = target
         if self.speed == 0:
             self.speed = config.DEFAULT_SPEED
-        re = self._init_path()
+        re = self._build_path()
         Tool.log_info("change_target: %s target to: %s" % (self.name, self.target),config.CAR_STATUS_LOG)
         return re
 
@@ -100,8 +101,10 @@ class Car():
         self.set_car_msg('speed', str(self.speed))
         Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
 
-    def _init_path(self):
-        #初始化路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
+    def _build_path(self):
+        #路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
+        if self.path_appoint == True:
+            return True
         target = self.target
         try:
             target = self._get_sites_key(target)
@@ -122,9 +125,7 @@ class Car():
         except Exception as e:
             print(e)
         self.willpath = self.path
-        #self.set_car_msg('target', str(self.target))
-        #self.set_car_msg('speed', str(self.speed))
-        return self.path
+        return True
 
     def switch_nextpoint(self):
         del (self.willpath[0])
@@ -152,12 +153,18 @@ class Car():
         return self.con.hget(self.name, key)
 
     def get_car_msg_all(self):
-        source = self.get_car_msg('source')
-        target = self.get_car_msg('target')
+        source = Tool.convert_xystr_xylist(self.get_car_msg('source'))
+        target = Tool.convert_xystr_xylist(self.get_car_msg('target'))
         status = self.get_car_msg('status')
-        speed = self.get_car_msg('speed')
+        speed = float(self.get_car_msg('speed'))
         mode = self.get_car_msg('mode')
-        return {'source':source,'target':target,'status':status,'speed':speed,'mode':mode}
+        if self.get_car_msg('appiont') == 'false' or self.get_car_msg('appiont') == None:
+            appoint = False
+        elif self.get_car_msg('appoint') == 'true':
+            appoint = True
+        else:
+            appoint = Tool.convert_xystr_xylist(self.get_car_msg('appiont'))
+        return {'source':source,'target':target,'status':status,'speed':speed,'mode':mode,'appoint':appoint}
 
     def set_realtime_msg(self,key,value=None):
         #key: name,status,osition,
@@ -172,24 +179,23 @@ class Car():
     def run(self):
         self.set_car_msg('status',config.CAR_STATUS_MAP['run']) #运行状态
         self.set_car_msg('mode',config.CAR_MODE_MAP['normal'])
-        self._init_path()
+        self._build_path()
         while(1):
             car_msg = self.get_car_msg_all()
-            targetxy = Tool.convert_xystr_xylist(car_msg['target'])
+            print(car_msg)
+            targetxy = car_msg['target']
             sw = self._switch_mode(car_msg)
             if sw == True:
                 continue
             if targetxy != self.target:
                 self.change_target(targetxy)
-            if car_msg['speed'] != str(self.speed):
+            if car_msg['speed'] != self.speed:
                 self.change_speed(car_msg['speed'])
-            self.set_car_msg('position', str(self.position))
             if len(self.willpath) == 0:  #完成工作
                 self.finished_work()
             elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
                 self.switch_nextpoint()
                 print(self.name, 'willpath:', self.willpath)
-            self._align_step()
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
                             'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
@@ -204,31 +210,35 @@ class Car():
         self.target = msg['target'][:]
         self.position = msg['source'][:]
         self.speed = float(msg['speed'])
-        self._init_path()
+        self._build_path()
         while(self.mode == config.CAR_MODE_MAP['loop']):
             car_msg = self.get_car_msg_all()
-            sourcexy = Tool.convert_xystr_xylist(car_msg['source'])
-            targetxy = Tool.convert_xystr_xylist(car_msg['target'])
+            sourcexy = car_msg['source']
+            targetxy = car_msg['target']
             if self.mode != car_msg['mode']:
                 self.mode = car_msg['mode']
                 return True
-            if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source):
-                self.source = sourcexy[:]
-                self.target = targetxy[:]
-                self.position = self.source[:]
-                self.speed = float(car_msg['speed'])
-                self._init_path()
+            if car_msg['appoint'] == False:
+                if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source):
+                    self.source = sourcexy[:]
+                    self.target = targetxy[:]
+                    self.position = self.source[:]
+                    self.speed = float(car_msg['speed'])
+                    self._build_path()
+            else:
+                self._build_path()
             if car_msg['speed'] != str(self.speed):
                 self.change_speed(car_msg['speed'])
-            self.set_car_msg('position', str(self.position))
             if len(self.willpath) == 0:  # 完成一遍路径，转换source,target进行下一遍循环
-                tmp = self.target
-                self.change_target(self.source)
-                self.source = tmp
+                if car_msg['appoint'] == False:
+                    tmp = self.target
+                    self.change_target(self.source)
+                    self.source = tmp
+                else:
+                    self.willpath = self.path[:].reverse()
             elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
                 self.switch_nextpoint()
                 print(self.name, 'willpath:', self.willpath)
-            self._align_step()
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
                             'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
@@ -236,7 +246,32 @@ class Car():
             time.sleep(1 / config.INTERVAL)
         return False
 
+    def _appoint_path(self):
+        #appoint  true-将source作为初始值给willpath赋值
+        car_msg = self.get_car_msg_all()
+        if car_msg['appoint'] == False:
+            self.path_appoint = False
+            return False
+        if car_msg['appoint'] == True:
+            source = car_msg['source']
+            site = self._get_sites_key(source)
+            self.source = car_msg['source'][:]
+            self.willpath = [site]
+            self.path = [site]
+            self.path_appoint = True
+        if self.path_appoint == True:
+            try:
+                appoint = car_msg['appoint']
+                site = self._get_sites_key(appoint)
+                self.willpath.append(site)
+                self.path.append(site)
+                self.set_car_msg('appoint','')
+            except Exception as e:
+                pass
+        return True
+
     def _update_position(self):
+        self._align_step()
         self.position[0] = round(self.position[0] + self.x_step,8)
         self.position[1] = round(self.position[1] + self.y_step,8)
 
@@ -244,8 +279,6 @@ class Car():
         if car_msg['mode'] == config.CAR_MODE_MAP["loop"]:
             sw = self._loop_mode(car_msg)
             return sw
-        if self.status == car_msg['mode']:
-            pass
     
     def _switch_status(self,car_msg):
         if car_msg['status'] == config.CAR_STATUS_MAP['stop']:
@@ -290,9 +323,9 @@ if __name__ == '__main__':
     cars = []
     x=0
     for item in config.cars:
-        x = x+1
-        if x != 1:
+        if x != 0:
             continue
+        x=x+1
         id = item['name']
         start = item['poistion']
         target = item['target']
