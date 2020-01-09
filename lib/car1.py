@@ -10,7 +10,8 @@ class Car():
         self.source = position[:]
         self.target = target
         self.path = None
-        self.path_appoint = False  #指定路径标志，默认为最短路径
+        self.appoint = False  #指定路径标志，默认为最短路径
+        self.path_appoint = []
         self.willpath = None
         self.sites = sites
         self.graph = graph
@@ -23,9 +24,13 @@ class Car():
         self.mode = '0'
         self.status = None
         self.con = Connector()
+        self._init_redis()
+
+    def _init_redis(self):
         self.set_car_msg('position', str(self.position))
         self.set_car_msg('target', str(self.target))
         self.set_car_msg('speed', str(self.speed))
+        self.set_car_msg('appoint','false')
 
     def get_near_site(self):
         for k,v in self.graph.items():
@@ -81,12 +86,8 @@ class Car():
                 return None
 
     def change_target(self,target):
-        #target_p = self._get_sites_key(target)
-        if self.target == target:
-            return self.path
         self.target = target
-        if self.speed == 0:
-            self.speed = config.DEFAULT_SPEED
+        self.speed = config.DEFAULT_SPEED if self.speed == 0 else self.speed
         re = self._build_path()
         Tool.log_info("change_target: %s target to: %s" % (self.name, self.target),config.CAR_STATUS_LOG)
         return re
@@ -101,12 +102,83 @@ class Car():
         self.set_car_msg('speed', str(self.speed))
         Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
 
+    def run(self):
+        self.set_car_msg('status',config.CAR_STATUS_MAP['run'])
+        self.set_car_msg('mode',config.CAR_MODE_MAP['normal']) #normal mode
+        self._build_path()
+        while(1):
+            car_msg = self.get_car_msg_all()
+            targetxy = car_msg['target']
+            sw = self._switch_mode(car_msg)
+            if sw == True:
+                continue
+            if car_msg['appoint'] != False and car_msg['appoint'] != None:
+                self._build_path()
+            if targetxy != self.target:
+                self.change_target(targetxy)
+            if car_msg['speed'] != self.speed:
+                self.change_speed(car_msg['speed'])
+            if len(self.willpath) == 0:
+                self.finished_work()
+            elif self.position == self.sites[self.willpath[0]]:
+                self.switch_nextpoint()
+                print(self.name, 'willpath:', self.willpath)
+            self._update_position()
+            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
+                            'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
+            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            time.sleep(1/config.INTERVAL)
+
+    def _loop_mode(self,msg):
+        #loop mode
+        if self.appoint != True:
+            self.source = msg['source'][:]
+            self.target = msg['target'][:]
+            self.position = msg['source'][:]
+            self.speed = float(msg['speed'])
+        self.mode = config.CAR_MODE_MAP['loop']
+        self._build_path()
+        while(self.mode == config.CAR_MODE_MAP['loop']):
+            car_msg = self.get_car_msg_all()
+            if self.mode != car_msg['mode']:
+                self.mode = car_msg['mode']
+                return True  #exit loop mode
+            if car_msg['appoint'] != False or car_msg['appoint'] != None:
+                self._build_path()
+            sourcexy = car_msg['source']
+            targetxy = car_msg['target']
+            if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source): #change source and target
+                if car_msg['appoint'] == False:
+                    self.source = sourcexy[:]
+                    self.target = targetxy[:]
+                    self.position = sourcexy[:]
+                    self.speed = float(car_msg['speed'])
+                self._build_path()
+            if car_msg['speed'] != str(self.speed):
+                self.change_speed(car_msg['speed'])
+            if len(self.willpath) == 0:  # switch source and target
+                if self.appoint == False:
+                    tmp = self.target
+                    self.change_target(self.source)
+                    self.source = tmp
+                else:
+                    self.path_appoint.reverse()
+                    self.willpath = self.path_appoint[:]
+            elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
+                self.switch_nextpoint()
+                #print(self.name, 'willpath:', self.willpath)
+            self._update_position()
+            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
+            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            time.sleep(1 / config.INTERVAL)
+        return False
+
     def _build_path(self):
         #路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
-        if self.path_appoint == True:
-            return True
-        target = self.target
-        try:
+        if self._appoint_path() == True:
+            pass
+        else:
+            target = self.target
             target = self._get_sites_key(target)
             nearsites = self.get_near_site()
             spath = None
@@ -118,13 +190,40 @@ class Car():
                         spath = [p,distance]
                     elif distance<spath[1]:
                         spath = [p,distance]
-            dist = self.compute_distance(self.position,self.sites[spath[0][0]])
             self.path = spath[0]
+            self.willpath = self.path[:]
+        if len(self.willpath) != 0:
+            dist = self.compute_distance(self.position,self.sites[self.willpath[0]])
             self.x_step = dist['x_step']
             self.y_step = dist['y_step']
-        except Exception as e:
-            print(e)
-        self.willpath = self.path
+        return True
+
+    def _appoint_path(self):
+        #appoint  true-将source作为初始值给willpath赋值
+        car_msg = self.get_car_msg_all()
+        if car_msg['appoint'] == False:
+            self.appoint = False
+            return False
+        if car_msg['appoint'] == None:
+            return True
+        if car_msg['appoint'] == True:
+            self.appoint = True
+            source = car_msg['source']
+            site = self._get_sites_key(source)
+            self.source = car_msg['source'][:]
+            self.target = car_msg['target'][:]
+            self.willpath = [site]
+            self.path = [site]
+            self.path_appoint = self.path[:]
+            self.position = source
+        if self.appoint == True and car_msg['appoint'] != True :
+            appoint = car_msg['appoint']
+            site = self._get_sites_key(appoint)
+            if site != self.path[-1]:
+                self.willpath.append(site)
+                self.path.append(site)
+                self.path_appoint= self.path[:]
+        self.set_car_msg('appoint','')
         return True
 
     def switch_nextpoint(self):
@@ -158,12 +257,15 @@ class Car():
         status = self.get_car_msg('status')
         speed = float(self.get_car_msg('speed'))
         mode = self.get_car_msg('mode')
-        if self.get_car_msg('appiont') == 'false' or self.get_car_msg('appiont') == None:
+        appoint = self.get_car_msg('appoint')
+        if appoint == 'false':
             appoint = False
-        elif self.get_car_msg('appoint') == 'true':
+        elif appoint == '' or appoint == None:
+            appoint = None
+        elif appoint == 'true':
             appoint = True
         else:
-            appoint = Tool.convert_xystr_xylist(self.get_car_msg('appiont'))
+            appoint = Tool.convert_xystr_xylist(self.get_car_msg('appoint'))
         return {'source':source,'target':target,'status':status,'speed':speed,'mode':mode,'appoint':appoint}
 
     def set_realtime_msg(self,key,value=None):
@@ -175,100 +277,6 @@ class Car():
         self.con.hset(rediskey, 'status', self.status)
         self.con.hset(rediskey, 'id', self.id)
         self.con.hset(rediskey, key, value)
-
-    def run(self):
-        self.set_car_msg('status',config.CAR_STATUS_MAP['run']) #运行状态
-        self.set_car_msg('mode',config.CAR_MODE_MAP['normal'])
-        self._build_path()
-        while(1):
-            car_msg = self.get_car_msg_all()
-            print(car_msg)
-            targetxy = car_msg['target']
-            sw = self._switch_mode(car_msg)
-            if sw == True:
-                continue
-            if targetxy != self.target:
-                self.change_target(targetxy)
-            if car_msg['speed'] != self.speed:
-                self.change_speed(car_msg['speed'])
-            if len(self.willpath) == 0:  #完成工作
-                self.finished_work()
-            elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
-                self.switch_nextpoint()
-                print(self.name, 'willpath:', self.willpath)
-            self._update_position()
-            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
-                            'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
-            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            time.sleep(1/config.INTERVAL)
-
-    def _loop_mode(self,msg):
-        #两点之间循环的工作模式
-        self.mode = config.CAR_MODE_MAP['loop']
-        self.set_car_msg('mode', config.CAR_MODE_MAP['loop'])  # 循环模式
-        self.source = msg['source'][:]
-        self.target = msg['target'][:]
-        self.position = msg['source'][:]
-        self.speed = float(msg['speed'])
-        self._build_path()
-        while(self.mode == config.CAR_MODE_MAP['loop']):
-            car_msg = self.get_car_msg_all()
-            sourcexy = car_msg['source']
-            targetxy = car_msg['target']
-            if self.mode != car_msg['mode']:
-                self.mode = car_msg['mode']
-                return True
-            if car_msg['appoint'] == False:
-                if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source):
-                    self.source = sourcexy[:]
-                    self.target = targetxy[:]
-                    self.position = self.source[:]
-                    self.speed = float(car_msg['speed'])
-                    self._build_path()
-            else:
-                self._build_path()
-            if car_msg['speed'] != str(self.speed):
-                self.change_speed(car_msg['speed'])
-            if len(self.willpath) == 0:  # 完成一遍路径，转换source,target进行下一遍循环
-                if car_msg['appoint'] == False:
-                    tmp = self.target
-                    self.change_target(self.source)
-                    self.source = tmp
-                else:
-                    self.willpath = self.path[:].reverse()
-            elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
-                self.switch_nextpoint()
-                print(self.name, 'willpath:', self.willpath)
-            self._update_position()
-            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
-                            'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
-            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            time.sleep(1 / config.INTERVAL)
-        return False
-
-    def _appoint_path(self):
-        #appoint  true-将source作为初始值给willpath赋值
-        car_msg = self.get_car_msg_all()
-        if car_msg['appoint'] == False:
-            self.path_appoint = False
-            return False
-        if car_msg['appoint'] == True:
-            source = car_msg['source']
-            site = self._get_sites_key(source)
-            self.source = car_msg['source'][:]
-            self.willpath = [site]
-            self.path = [site]
-            self.path_appoint = True
-        if self.path_appoint == True:
-            try:
-                appoint = car_msg['appoint']
-                site = self._get_sites_key(appoint)
-                self.willpath.append(site)
-                self.path.append(site)
-                self.set_car_msg('appoint','')
-            except Exception as e:
-                pass
-        return True
 
     def _update_position(self):
         self._align_step()

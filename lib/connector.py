@@ -51,8 +51,7 @@ if __name__ == '__main__':
     #print(Connector().keys())
    # re = Connector().get('car1').decode('utf-8')
    # print(Connector().hget('car1','target'))
-
-    for item in con.subscribe('topic1'):
-        print(item)
+    con.hset('car1','appoint','')
+    print(con.hget('car1','appoint1'))
 
 

@@ -58,7 +58,7 @@ return false   //不重新加载页面
                $('#cc').append(html_name);
 
                var htmlx = '';
-               var htmla = '<option value="flase">false</option><option value="true">true</option>';
+               var htmla = '<option value="false">false</option><option value="true">true</option>';
                for(var k in carsdata[0].sites) {
                     htmlx += '<option value="[' + carsdata[0].sites[k] + ']">[' + carsdata[0].sites[k] + ']</option>';
                 }
