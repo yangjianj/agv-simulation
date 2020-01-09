@@ -100,7 +100,7 @@ class Car():
         self.x_step = dist['x_step']
         self.y_step = dist['y_step']
         self.set_car_msg('speed', str(self.speed))
-        Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
+        #Tool.log_info("change_speed: %s speed to: %s"%(self.name,self.speed*config.INTERVAL),config.CAR_STATUS_LOG)
 
     def run(self):
         self.set_car_msg('status',config.CAR_STATUS_MAP['run'])
@@ -113,7 +113,11 @@ class Car():
             if sw == True:
                 continue
             if car_msg['appoint'] != False and car_msg['appoint'] != None:
-                self._build_path()
+                self._appoint_path()
+                if len(self.willpath) != 0:
+                    dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
+                    self.x_step = dist['x_step']
+                    self.y_step = dist['y_step']
             if targetxy != self.target:
                 self.change_target(targetxy)
             if car_msg['speed'] != self.speed:
@@ -124,8 +128,7 @@ class Car():
                 self.switch_nextpoint()
                 print(self.name, 'willpath:', self.willpath)
             self._update_position()
-            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,
-                            'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
+            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
             time.sleep(1/config.INTERVAL)
 
@@ -140,11 +143,19 @@ class Car():
         self._build_path()
         while(self.mode == config.CAR_MODE_MAP['loop']):
             car_msg = self.get_car_msg_all()
+            print('on 55555', self.willpath, len(self.willpath))
+            print(self.source)
+            print(self.target)
             if self.mode != car_msg['mode']:
                 self.mode = car_msg['mode']
                 return True  #exit loop mode
             if car_msg['appoint'] != False or car_msg['appoint'] != None:
-                self._build_path()
+                self._appoint_path()
+                if len(self.willpath) != 0:
+                    dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
+                    self.x_step = dist['x_step']
+                    self.y_step = dist['y_step']
+            print('on 55555', self.willpath, len(self.willpath))
             sourcexy = car_msg['source']
             targetxy = car_msg['target']
             if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source): #change source and target
@@ -156,8 +167,12 @@ class Car():
                 self._build_path()
             if car_msg['speed'] != str(self.speed):
                 self.change_speed(car_msg['speed'])
+            print('on 66666',self.willpath,len(self.willpath))
             if len(self.willpath) == 0:  # switch source and target
+                print('22222222')
+                print(self.appoint)
                 if self.appoint == False:
+                    print('switch source and target')
                     tmp = self.target
                     self.change_target(self.source)
                     self.source = tmp
@@ -170,6 +185,8 @@ class Car():
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            print('in loop','willpath',self.willpath,'speed',self.speed)
+            print(self.source,self.target)
             time.sleep(1 / config.INTERVAL)
         return False
 
@@ -188,7 +205,7 @@ class Car():
                     distance = self.compute_path_distance(self.position,p)
                     if not spath:
                         spath = [p,distance]
-                    elif distance<spath[1]:
+                    elif distance < spath[1]:
                         spath = [p,distance]
             self.path = spath[0]
             self.willpath = self.path[:]
