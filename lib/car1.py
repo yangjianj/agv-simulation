@@ -109,16 +109,13 @@ class Car():
         while(1):
             car_msg = self.get_car_msg_all()
             targetxy = car_msg['target']
+            #print('mode:',car_msg['mode'])
             sw = self._switch_mode(car_msg)
             if sw == True:
                 continue
-            if car_msg['appoint'] != False and car_msg['appoint'] != None:
+            if  car_msg['appoint']:
                 self._appoint_path()
-                if len(self.willpath) != 0:
-                    dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
-                    self.x_step = dist['x_step']
-                    self.y_step = dist['y_step']
-            if targetxy != self.target:
+            elif targetxy != self.target:
                 self.change_target(targetxy)
             if car_msg['speed'] != self.speed:
                 self.change_speed(car_msg['speed'])
@@ -130,49 +127,76 @@ class Car():
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            print('11 self.path',self.path)
+            print('11 self.willpath', self.willpath)
             time.sleep(1/config.INTERVAL)
-
-    def _loop_mode(self,msg):
-        #loop mode
+    
+    def _circle_mode(self,msg):
+        # circle mode
+        self.mode = config.CAR_MODE_MAP['circle']
         if self.appoint != True:
             self.source = msg['source'][:]
             self.target = msg['target'][:]
             self.position = msg['source'][:]
             self.speed = float(msg['speed'])
-        self.mode = config.CAR_MODE_MAP['loop']
-        self._build_path()
-        while(self.mode == config.CAR_MODE_MAP['loop']):
+            self._build_path()
+        while (self.mode == config.CAR_MODE_MAP['circle']):
             car_msg = self.get_car_msg_all()
-            print('on 55555', self.willpath, len(self.willpath))
-            print(self.source)
-            print(self.target)
-            if self.mode != car_msg['mode']:
-                self.mode = car_msg['mode']
-                return True  #exit loop mode
-            if car_msg['appoint'] != False or car_msg['appoint'] != None:
-                self._appoint_path()
-                if len(self.willpath) != 0:
-                    dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
-                    self.x_step = dist['x_step']
-                    self.y_step = dist['y_step']
-            print('on 55555', self.willpath, len(self.willpath))
             sourcexy = car_msg['source']
             targetxy = car_msg['target']
-            if (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source): #change source and target
-                if car_msg['appoint'] == False:
-                    self.source = sourcexy[:]
-                    self.target = targetxy[:]
-                    self.position = sourcexy[:]
-                    self.speed = float(car_msg['speed'])
+            if self.mode != car_msg['mode']:
+                self.mode = car_msg['mode']
+                return True  # exit loop mode
+            if car_msg['appoint']:
+                self._appoint_path()
+            elif (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source):  # change source and target
+                self.source = sourcexy[:]
+                self.target = targetxy[:]
+                self.position = sourcexy[:]
+                self.speed = float(car_msg['speed'])
                 self._build_path()
             if car_msg['speed'] != str(self.speed):
                 self.change_speed(car_msg['speed'])
-            print('on 66666',self.willpath,len(self.willpath))
             if len(self.willpath) == 0:  # switch source and target
-                print('22222222')
-                print(self.appoint)
+                self.willpath = self.path[:]
+            elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
+                self.switch_nextpoint()
+            self._update_position()
+            real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
+            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            print('circle self.path', self.path)
+            print('circle self.willpath', self.willpath)
+            time.sleep(1 / config.INTERVAL)
+        return False
+
+    def _loop_mode(self,msg):
+        #loop mode
+        self.mode = config.CAR_MODE_MAP['loop']
+        if self.appoint != True:
+            self.source = msg['source'][:]
+            self.target = msg['target'][:]
+            self.position = msg['source'][:]
+            self.speed = float(msg['speed'])
+            self._build_path()
+        while(self.mode == config.CAR_MODE_MAP['loop']):
+            car_msg = self.get_car_msg_all()
+            sourcexy = car_msg['source']
+            targetxy = car_msg['target']
+            if self.mode != car_msg['mode']:
+                self.mode = car_msg['mode']
+                return True  #exit loop mode
+            if car_msg['appoint']:
+                self._appoint_path()
+            elif (targetxy != self.target and targetxy != self.source) or (sourcexy != self.target and sourcexy != self.source): #change source and target
+                self.source = sourcexy[:]
+                self.target = targetxy[:]
+                self.position = sourcexy[:]
+                self.speed = float(car_msg['speed'])
+                self._build_path()
+            if car_msg['speed'] != str(self.speed):
+                self.change_speed(car_msg['speed'])
+            if len(self.willpath) == 0:  # switch source and target
                 if self.appoint == False:
-                    print('switch source and target')
                     tmp = self.target
                     self.change_target(self.source)
                     self.source = tmp
@@ -181,34 +205,30 @@ class Car():
                     self.willpath = self.path_appoint[:]
             elif self.position == self.sites[self.willpath[0]]:  # 切换nextp
                 self.switch_nextpoint()
-                #print(self.name, 'willpath:', self.willpath)
+                print(self.name, 'willpath:', self.willpath)
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            print('in loop','willpath',self.willpath,'speed',self.speed)
-            print(self.source,self.target)
+            print('loop self.path', self.path)
+            print('loop self.willpath', self.willpath)
             time.sleep(1 / config.INTERVAL)
         return False
 
     def _build_path(self):
         #路径：根据当前坐标+目的坐标，初始化行走路径，x_step,y_step
-        if self._appoint_path() == True:
-            pass
-        else:
-            target = self.target
-            target = self._get_sites_key(target)
-            nearsites = self.get_near_site()
-            spath = None
-            for near in nearsites:
-                plist=Tool.find_shartest_path(self.graph,near,target)
-                for p in plist:
-                    distance = self.compute_path_distance(self.position,p)
-                    if not spath:
-                        spath = [p,distance]
-                    elif distance < spath[1]:
-                        spath = [p,distance]
-            self.path = spath[0]
-            self.willpath = self.path[:]
+        target = self._get_sites_key(self.target)
+        nearsites = self.get_near_site()
+        spath = None
+        for near in nearsites:
+            plist=Tool.find_shartest_path(self.graph,near,target)
+            for p in plist:
+                distance = self.compute_path_distance(self.position,p)
+                if not spath:
+                    spath = [p,distance]
+                elif distance < spath[1]:
+                    spath = [p,distance]
+        self.path = spath[0]
+        self.willpath = self.path[:]
         if len(self.willpath) != 0:
             dist = self.compute_distance(self.position,self.sites[self.willpath[0]])
             self.x_step = dist['x_step']
@@ -225,22 +245,24 @@ class Car():
             return True
         if car_msg['appoint'] == True:
             self.appoint = True
-            source = car_msg['source']
-            site = self._get_sites_key(source)
+            site = self._get_sites_key(car_msg['source'])
             self.source = car_msg['source'][:]
             self.target = car_msg['target'][:]
             self.willpath = [site]
             self.path = [site]
             self.path_appoint = self.path[:]
-            self.position = source
+            self.position = car_msg['source']
         if self.appoint == True and car_msg['appoint'] != True :
-            appoint = car_msg['appoint']
-            site = self._get_sites_key(appoint)
+            site = self._get_sites_key(car_msg['appoint'])
             if site != self.path[-1]:
                 self.willpath.append(site)
                 self.path.append(site)
                 self.path_appoint= self.path[:]
         self.set_car_msg('appoint','')
+        if len(self.willpath) != 0:
+            dist = self.compute_distance(self.position, self.sites[self.willpath[0]])
+            self.x_step = dist['x_step']
+            self.y_step = dist['y_step']
         return True
 
     def switch_nextpoint(self):
@@ -303,6 +325,9 @@ class Car():
     def _switch_mode(self,car_msg):
         if car_msg['mode'] == config.CAR_MODE_MAP["loop"]:
             sw = self._loop_mode(car_msg)
+            return sw
+        if car_msg['mode'] == config.CAR_MODE_MAP["circle"]:
+            sw = self._circle_mode(car_msg)
             return sw
     
     def _switch_status(self,car_msg):

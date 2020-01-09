@@ -6,7 +6,7 @@ from lib.mqtt_connector import MqttConnecter
 import config.config as config
 con = Connector()
 mqttc = MqttConnecter()
-mqttc.connect(config.MQTT_HOST,config.MQTT_PORT,keep_alive=config.KEEPALIVE)
+#mqttc.connect(config.MQTT_HOST,config.MQTT_PORT,keep_alive=config.KEEPALIVE)
 
 # 找出一条路径
 def find_a_path(graph, start, end, path=[]):
@@ -55,7 +55,7 @@ def publish(topic, message):
     con.publish(topic, message)  #to redis for webui
     message = json.loads(message)
     message.update({"position":{'x' : message["position"][0],'y': message["position"][1]}})
-    mqttc.publish(config.CAR_TOPIC,payload=str([message]),qos=config.QOS)  #to mqtt for 3dstdio
+    #mqttc.publish(config.CAR_TOPIC,payload=str([message]),qos=config.QOS)  #to mqtt for 3dstdio
     return True
 
 def three_point_online(p1, p2, p3):

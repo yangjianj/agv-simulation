@@ -5,6 +5,11 @@
 3.启动redis服务器    
 4.打开agv-simulator.html    
 
+###功能介绍    
+1.路径：自动计算原点--终点最短路径行走，人为指定行走路径上的各个节点    
+2.mode：normal:按路径行走一次；loop：按路径走完一遍后原路返回，重复如此；circle:按路径走到终点后，不断重复走相同路径    
+3.改变速度    
+
 ### 效果图  
 ![avatar](static/img/agv-car.PNG)
 

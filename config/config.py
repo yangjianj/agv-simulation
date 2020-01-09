@@ -2,8 +2,8 @@
 import os
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAR_MESSAGE_TOPIC = 'car_message'
-INTERVAL = 5  #每秒上报5次位置信息
-DEFAULT_SPEED = 20
+INTERVAL = 1  #每秒上报5次位置信息
+DEFAULT_SPEED = 300
 CAR_STATUS_LOG = os.path.join(BASEDIR,'config/realtime.log')
 SYSTEM_LOG = os.path.join(BASEDIR,'config/system.log')
 
@@ -30,7 +30,7 @@ QOS = 0
 #status : 0-空闲，1-完成任务，2-运行，3-红外防撞，5-暂停，6-货架举放中，7-充电，81-红外防撞，246-待机模式,
 #mode: 0-normal 1-loop
 CAR_STATUS_MAP = {'idel':'0','finish':'1','run':'2','pause':'5','charge':'7','stop':'9',}
-CAR_MODE_MAP = {'normal':'0','loop':'1'}
+CAR_MODE_MAP = {'normal':'0','loop':'1','circle':'2'}
 cars = [
 	{
 		'name': 'car1',

@@ -1,4 +1,8 @@
-x =1
-a = 0
-x = 2 if a == 1 else x
-print(x)
+if False:
+    print(1)
+
+if None:
+    print(2)
+
+if [1]:
+    print(3)
