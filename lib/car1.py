@@ -127,8 +127,6 @@ class Car():
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            print('11 self.path',self.path)
-            print('11 self.willpath', self.willpath)
             time.sleep(1/config.INTERVAL)
     
     def _circle_mode(self,msg):
@@ -164,8 +162,6 @@ class Car():
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            print('circle self.path', self.path)
-            print('circle self.willpath', self.willpath)
             time.sleep(1 / config.INTERVAL)
         return False
 
@@ -209,8 +205,6 @@ class Car():
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
             Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
-            print('loop self.path', self.path)
-            print('loop self.willpath', self.willpath)
             time.sleep(1 / config.INTERVAL)
         return False
 
