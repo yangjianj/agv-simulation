@@ -1,7 +1,7 @@
 # agv-simulation
 ###使用介绍   
-1.启动flask    
-2.启动redis服务器    
+1.启动redis服务器    
+2.启动flask  
 3.lib/car.py文件启动多辆小车   
 4.打开agv-simulator.html    
 
