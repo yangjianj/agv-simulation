@@ -14,7 +14,7 @@ REDIS_PORT = 6379
 #3D平台mqtt服务器信息
 MQTT_HOST = '10.129.5.11'
 MQTT_PORT = 1883
-CAR_MQTT_TOPIC = ['mqtt1','mqtt2','mqtt3'] #'/test/mq'   #mqtt1
+CAR_MQTT_TOPIC = ['car1','car2','car3'] #'/test/mq'   #mqtt1
 KEEPALIVE = 60
 QOS = 0
 '''format
