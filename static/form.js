@@ -97,6 +97,7 @@ $("#cc").change(function(){
         if(selected == carsdata[i].name){
             //console.log(carsdata[i].sites);
             var html = '';
+            var htmla = '<option value="false">false</option><option value="true">true</option>';
             for(var k in carsdata[i].sites) {
                 html += '<option value="[' + carsdata[i].sites[k] + ']">[' + carsdata[i].sites[k] + ']</option>';
             }
@@ -105,7 +106,7 @@ $("#cc").change(function(){
             $('#src').children().remove();
             $('#src').append(html);
             $('#appoint').children().remove();
-            $('#appoint').append(htmla+htmlx);
+            $('#appoint').append(htmla+html);
         }
     }
 });

@@ -5,7 +5,7 @@ from lib.connector import Connector
 import lib.tool as Tool
 import config.config as config
 class Car():
-    def __init__(self,name,position,target,sites,graph,speed):
+    def __init__(self,name,position,target,sites,graph,speed,topic):
         self.position = position[:]
         self.source = position[:]
         self.target = target
@@ -23,6 +23,7 @@ class Car():
         self.id = 'ax001'
         self.mode = '0'
         self.status = None
+        self.mqtt_topic = topic
         self.con = Connector()
         self._init_redis()
 
@@ -126,7 +127,7 @@ class Car():
                 print(self.name, 'willpath:', self.willpath)
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
-            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            Tool.publish(config.CAR_MESSAGE_TOPIC,self.mqtt_topic,json.dumps(real_message))
             time.sleep(1/config.INTERVAL)
     
     def _circle_mode(self,msg):
@@ -161,7 +162,7 @@ class Car():
                 self.switch_nextpoint()
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
-            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            Tool.publish(config.CAR_MESSAGE_TOPIC,self.mqtt_topic,json.dumps(real_message))
             time.sleep(1 / config.INTERVAL)
         return False
 
@@ -204,7 +205,7 @@ class Car():
                 print(self.name, 'willpath:', self.willpath)
             self._update_position()
             real_message = {'name': self.name, 'position': self.position, 'speed': self.speed,'timestamp': time.strftime('%Y-%m-%d,%H:%M:%S')}
-            Tool.publish(config.CAR_MESSAGE_TOPIC, json.dumps(real_message))
+            Tool.publish(config.CAR_MESSAGE_TOPIC,self.mqtt_topic,json.dumps(real_message))
             time.sleep(1 / config.INTERVAL)
         return False
 
@@ -367,20 +368,19 @@ if __name__ == '__main__':
     cars = []
     x=0
     for item in config.cars:
-        if x != 0:
-            continue
-        x=x+1
         id = item['name']
         start = item['poistion']
         target = item['target']
         sites = item['sites']
         graph0 = item['graph']
         speed = item['speed']
-        car = Car(id,start,target,sites,graph0,speed)
+        topic = config.CAR_MQTT_TOPIC[x]
+        car = Car(id,start,target,sites,graph0,speed,topic)
         #car.run()
         t=threading.Thread(target=car.run,args=())
         cars.append(t)
         t.start()
+        x = x+1
     for t in cars:
         t.join()
 
