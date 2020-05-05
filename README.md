@@ -57,5 +57,5 @@ car1_20191031-101005 {'position':'[200,500]','speed':'10'} #上传位置信息
 
 ## 技术实现：  
 1.前端：jquery+echarts  
-2.后端：falsk框架+websockets
+2.后端：falsk框架+websockets  
 3.redis消息队列使用
